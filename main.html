@@ -1,3 +1,28 @@
-bonjour
-
-bonjour3
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>La réponse est dans le tableau webdoc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div>
+        <img src="img/atelier.jpg" usemap="#image-map">
+        <map name="image-map">
+            <area target="" alt="femme" title="femme" href="" coords="1117,588,1264,1021" shape="rect">
+            <area target="" alt="courbet" title="courbet" href="" coords="1119,1026,907,685" shape="rect">
+            <area target="" alt="baudelaire" title="baudelaire" href="" coords="1798,640,1999,894" shape="rect">
+        </map>
+    </div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+    $('img[usemap]').rwdImageMaps();
+});
+</script>
+</body>
+</html>
