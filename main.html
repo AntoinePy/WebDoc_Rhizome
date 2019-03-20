@@ -9,6 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body>
+    <audio autoplay="false" id="guitare" src="audio/jeux-interdits.mp3"></audio>
     <div>
         <img src="img/atelier.jpg" usemap="#image-map">
         <map name="image-map">
@@ -18,10 +19,7 @@
             <area target="" alt="Bruyas" title="Bruyas" href="" coords="1396,900,1320,576" shape="rect">
             <area target="" alt="Champfleury" title="Champfleury" href="" coords="1564,676,1396,1012" shape="rect">
             <area target="" alt="chien" title="chien" href="" coords="303,867,442,1024" shape="rect">
-            <area target="" alt="guitare" title="guitare" href="" coords="640,1144,446,994" shape="rect">
-
-
-
+            <area id="chitarra" target="" alt="guitare" title="guitare" href="" coords="640,1144,446,994" shape="rect">
         </map>
     </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -30,6 +28,15 @@
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
 });
+</script>
+<script>
+$("#chitarra").click(function(){
+    var audio = document.getElementById("guitare");
+    console.log(audio);
+    audio.play();
+    return false;
+}
+);
 </script>
 </body>
 </html>
