@@ -9,7 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <audio autoplay="false" id="guitare" src="audio/jeux-interdits.mp3"></audio>
+    <audio autoplay="false" id="guitare" src="audio/guitare.m4a"></audio>
     <div>
         <img src="img/atelier.jpg" usemap="#image-map">
         <map name="image-map">
@@ -32,7 +32,6 @@ $(document).ready(function(e) {
 <script>
 $("#chitarra").click(function(){
     var audio = document.getElementById("guitare");
-    console.log(audio);
     audio.play();
     return false;
 }
