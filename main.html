@@ -55,14 +55,14 @@ $("#woman").click(function(){
         classes: {
             "ui-dialog":"highlight"
         },
-        modal: true 
+        modal: true
     });
+    var dialog1 = $("#dialog").dialog();
 });
-var dialog1 = $("dialog").dialog();
-var dialog2 = $("#dialog2").dialog();
-dialog2.dialog("close");
+
 $("#val1").click(function(){
-    dialog1.dialog("option","hide");
+        var dialog2 = $("#dialog2").dialog();
+    dialog1.dialog("hide");
     dialog2.dialog("open");
 }
 );
