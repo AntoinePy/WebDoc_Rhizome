@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-    <audio autoplay="false" id="guitare" src="audio/guitare.m4a"></audio>
+    <audio  id="guitare" src="audio/guitare.m4a"></audio>
     <div>
         <img src="img/atelier.jpg" usemap="#image-map">
         <map name="image-map">
@@ -45,11 +45,17 @@ $(document).ready(function(e) {
 });
 </script>
 <script>
-$("#chitarra").click(function(){
+
+    var dialog1;
+    var dialog2;
     var audio = document.getElementById("guitare");
+
+
+$("#chitarra").click(function(){
     audio.play();
     return false;
 });
+
 $("#woman").click(function(){
     $("#dialog").dialog({
         classes: {
@@ -57,13 +63,13 @@ $("#woman").click(function(){
         },
         modal: true
     });
-    var dialog1 = $("#dialog").dialog();
+    dialog1 = $("#dialog").dialog();
 });
 
 $("#val1").click(function(){
-        var dialog2 = $("#dialog2").dialog();
-    dialog1.dialog("hide");
-    dialog2.dialog("open");
+        dialog2 = $("#dialog2").dialog();
+        dialog1.dialog('close');
+
 }
 );
 </script>
