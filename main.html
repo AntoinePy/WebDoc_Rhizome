@@ -6,14 +6,18 @@
     <title>La réponse est dans le tableau webdoc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
     <audio autoplay="false" id="guitare" src="audio/guitare.m4a"></audio>
     <div>
         <img src="img/atelier.jpg" usemap="#image-map">
         <map name="image-map">
-            <area target="" alt="femme" title="femme" href="" coords="1117,588,1264,1021" shape="rect">
+            <area id="woman" target="" alt="femme" title="femme" href="#dialog" coords="1117,588,1264,1021" shape="rect">
             <area target="" alt="courbet" title="courbet" href="" coords="1119,1026,907,685" shape="rect">
             <area target="" alt="baudelaire" title="baudelaire" href="" coords="1798,640,1999,894" shape="rect">
             <area target="" alt="Bruyas" title="Bruyas" href="" coords="1396,900,1320,576" shape="rect">
@@ -22,8 +26,10 @@
             <area id="chitarra" target="" alt="guitare" title="guitare" href="" coords="640,1144,446,994" shape="rect">
         </map>
     </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="js/jquery.rwdImageMaps.min.js"></script>
+    <div id="dialog" title="Femme">
+        <p>Discussion femme</p>
+    </div>
+<script src="js/jquery.rwdImageMaps.min.js"></script>   
 <script>
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
@@ -34,8 +40,10 @@ $("#chitarra").click(function(){
     var audio = document.getElementById("guitare");
     audio.play();
     return false;
-}
-);
+});
+$("#woman").click(function(){
+    $("#dialog").dialog();
+});
 </script>
 </body>
 </html>
