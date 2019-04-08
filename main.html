@@ -27,7 +27,16 @@
         </map>
     </div>
     <div id="dialog" title="Femme">
-        <p>Discussion femme</p>
+        <p>Je m'appelle Loic je suis un gros débile, est- ce que je dois fermer ma gueule ?</p>
+        <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="oui">Oui</label><br>
+        <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="non">Non</label><br>
+        <button id="val1">Valider</button>
+    </div>
+    <div id="dialog2" title="Femme2">
+        <p>Courbet courbet</p>
+        <input type="checkbox" class="radio" name="frep2[][]" value="1"><label for="oui">Oui</label><br>
+        <input type="checkbox" class="radio" name="frep2[][]" value="1"><label for="non">Non</label><br>
+        <button id="val2">Valider</button>
     </div>
 <script src="js/jquery.rwdImageMaps.min.js"></script>   
 <script>
@@ -42,7 +51,32 @@ $("#chitarra").click(function(){
     return false;
 });
 $("#woman").click(function(){
-    $("#dialog").dialog();
+    $("#dialog").dialog({
+        classes: {
+            "ui-dialog":"highlight"
+        },
+        modal: true 
+    });
+});
+var dialog1 = $("dialog").dialog();
+var dialog2 = $("#dialog2").dialog();
+dialog2.dialog("close");
+$("#val1").click(function(){
+    dialog1.dialog("option","hide");
+    dialog2.dialog("open");
+}
+);
+</script>
+<script>
+$("input:checkbox").on('click', function() {
+  var $box = $(this);
+  if ($box.is(":checked")) {
+    var group = "input:checkbox[name='" + $box.attr("name") + "']";
+    $(group).prop("checked", false);
+    $box.prop("checked", true);
+  } else {
+    $box.prop("checked", false);
+  }
 });
 </script>
 </body>
