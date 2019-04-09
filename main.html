@@ -17,8 +17,8 @@
     <div>
         <img src="img/atelier.jpg" usemap="#image-map">
         <map name="image-map">
-            <area id="woman" target="" alt="femme" title="femme" href="#dialog" coords="1117,588,1264,1021" shape="rect">
-            <area target="" alt="courbet" title="courbet" href="" coords="1119,1026,907,685" shape="rect">
+            <area id="woman"   target="" alt="femme" title="femme" href="#dialog" coords="1151,1158,1135,1136,1126,1122,1126,1105,1113,1105,1099,1105,1085,1105,1082,1087,1094,1080,1099,1067,1101,1053,1110,1041,1119,1030,1124,1018,1129,1009,1136,1004,1133,990,1124,972,1126,954,1126,935,1124,905,1126,915,1126,891,1124,875,1126,857,1126,839,1129,818,1135,802,1135,774,1136,760,1138,740,1135,719,1140,728,1129,703,1135,689,1142,673,1152,663,1159,657,1142,650,1151,650,1131,647,1122,632,1117,613,1124,604,1135,602,1147,602,1160,602,1172,596,1186,599,1196,606,1191,617,1184,624,1184,632,1193,636,1200,643,1207,645,1216,647,1225,652,1232,664,1234,673,1235,689,1228,730,1225,746,1216,756,1214,767,1230,781,1235,792,1234,800,1237,818,1230,838,1223,860,1211,891,1207,907,1206,923,1209,939,1213,954,1218,972,1228,984,1239,984,1251,983,1260,988,1272,1000,1279,1004,1299,1004,1310,1006,1354,1041,1350,1044,1354,1053,1352,1067,1364,1071,1377,1077,1387,1088,1393,1099,1398,1109,1402,1127,1386,1137,1363,1138,1336,1145,1308,1152,1280,1145,1257,1153,1225,1162,1209,1157,1193,1137" shape="poly">
+            <area target=""  alt="courbet" title="courbet" href="" coords="1119,1026,907,685" shape="rect">
             <area target="" alt="baudelaire" title="baudelaire" href="" coords="1798,640,1999,894" shape="rect">
             <area target="" alt="Bruyas" title="Bruyas" href="" coords="1396,900,1320,576" shape="rect">
             <area target="" alt="Champfleury" title="Champfleury" href="" coords="1564,676,1396,1012" shape="rect">
@@ -26,7 +26,7 @@
             <area id="chitarra" target="" alt="guitare" title="guitare" href="" coords="640,1144,446,994" shape="rect">
         </map>
     </div>
-    <div id="dialog" title="Femme">
+    <div id="dialog" title="Femme" data-toggle="modal">
         <p>Je m'appelle Loic je suis un gros débile, est- ce que je dois fermer ma gueule ?</p>
         <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="oui">Oui</label><br>
         <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="non">Non</label><br>
@@ -39,51 +39,6 @@
         <button id="val2">Valider</button>
     </div>
 <script src="js/jquery.rwdImageMaps.min.js"></script>   
-<script>
-$(document).ready(function(e) {
-    $('img[usemap]').rwdImageMaps();
-});
-</script>
-<script>
-
-    var dialog1;
-    var dialog2;
-    var audio = document.getElementById("guitare");
-
-
-$("#chitarra").click(function(){
-    audio.play();
-    return false;
-});
-
-$("#woman").click(function(){
-    $("#dialog").dialog({
-        classes: {
-            "ui-dialog":"highlight"
-        },
-        modal: true
-    });
-    dialog1 = $("#dialog").dialog();
-});
-
-$("#val1").click(function(){
-        dialog2 = $("#dialog2").dialog();
-        dialog1.dialog('close');
-
-}
-);
-</script>
-<script>
-$("input:checkbox").on('click', function() {
-  var $box = $(this);
-  if ($box.is(":checked")) {
-    var group = "input:checkbox[name='" + $box.attr("name") + "']";
-    $(group).prop("checked", false);
-    $box.prop("checked", true);
-  } else {
-    $box.prop("checked", false);
-  }
-});
-</script>
+<script src="main.js"></script>
 </body>
 </html>
