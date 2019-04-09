@@ -7,3 +7,13 @@ img{
     height: auto;
     width: auto;
 }
+/* area:hover{
+    border: 2px solid #07da35;
+} */
+/* area:hover{
+    border: 2px solid red;
+} */
+.inside{
+    /* border: 2px solid red; */
+    outline: solid 100px green;
+}
