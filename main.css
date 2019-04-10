@@ -12,13 +12,13 @@ img{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
+    padding-left:500px;
     left: 0;
     top: 0;
     width: 250px; /* Full width */
     height: 250px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    border-radius: 50%;
-    color: red;
+    color:black;
     text-align: center;
     font-size: 24px;
     font-weight: 900;
@@ -38,10 +38,10 @@ img{
   
   /* Modal Content */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #F9D992;
     margin: auto;
-    border: 1px solid #888;
-    width: 80%;
+    border: 10px solid #F9D992;
+    border-radius:50%;
   }
   
   /* The Close Button */
@@ -58,3 +58,22 @@ img{
     text-decoration: none;
     cursor: pointer;
   }
+/*   .circle1{
+    border: 5px solid #00bfb6;
+    position: absolute;
+    width: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    right: -15px;
+    bottom: 23px;
+  }
+  .circle2{
+    content: "";
+    position: absolute;
+    width: 25px;
+    padding: 20px;
+    border-radius: 50%;
+    right: 0px;
+    bottom: 0px;
+    background: #fff;
+  }  */
