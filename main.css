@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "fontDialog";
+    src: url('fonts/Zcool.ttf');
+}
+
 body{
     background-color: black;
 }
@@ -24,24 +29,14 @@ img{
     font-weight: 900;
     font-family: arial;
   }
-/*   width: 250px;
-  border: 5px solid #00bfb6;
-  padding: 80px 0px;
-  margin: 30px auto;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 900;
-  font-family: arial;
-  position: relative;
-  color: #00bfb6; */
-  
+
   /* Modal Content */
   .modal-content {
     background-color: #F9D992;
     margin: auto;
     border: 10px solid #F9D992;
     border-radius:50%;
+      font-family: 'fontDialog';
   }
   
   /* The Close Button */
@@ -58,6 +53,9 @@ img{
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
 /*   .circle1{
     border: 5px solid #00bfb6;
     position: absolute;
