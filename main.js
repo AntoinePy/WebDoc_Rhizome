@@ -10,6 +10,9 @@ $("#atelier").mapster(
     fillColor: 'ff0000',
     fillOpacity: 0.3
 });
+setTimeout( function() {
+    document.getElementsByTagName( "input" )[0].click();
+}, 1000 );
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var femme = document.getElementById('woman');

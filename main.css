@@ -27,24 +27,29 @@ img{
     text-align: center;
     font-size: 24px;
     font-weight: 900;
-    font-family: arial;
   }
 
   /* Modal Content */
   .modal-content {
+    align-items:center;
     background-color: #F9D992;
     margin: auto;
-    border: 10px solid #F9D992;
-    border-radius:50%;
-      font-family: 'fontDialog';
+/*     border: 5px solid #F9D992;
+ */    border-radius:50%;
+    font-family: 'fontDialog';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    justify-content: center;
   }
   
   /* The Close Button */
   .close {
     color: #aaaaaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-left: 20px;
   }
   
   .close:hover,
@@ -53,25 +58,36 @@ img{
     text-decoration: none;
     cursor: pointer;
   }
+/*   .boxy,
+  .boxy label,
+  .boxy input {
+    
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: relative;
+    outline: none;
+    user-select: none; 
+}
+.boxy {
+    
+  background: linear-gradient( 300deg,  #a57746,  #a57746 );
+  box-shadow: inset 2px 2px 10px -1px  #a57746;
+  margin-left: 50px; 
+}
+.boxy:before{
+        content: "\f00c";
+        position: absolute;
+        left: 0;
+        right: 0;
+        line-height: 28px;
+        color: white;
+        text-align: center;
+        font-family: "Font Awesome 5 Free";
+        font-size: 16px;
+} */
 
 
 
-/*   .circle1{
-    border: 5px solid #00bfb6;
-    position: absolute;
-    width: 25px;
-    padding: 20px;
-    border-radius: 50%;
-    right: -15px;
-    bottom: 23px;
-  }
-  .circle2{
-    content: "";
-    position: absolute;
-    width: 25px;
-    padding: 20px;
-    border-radius: 50%;
-    right: 0px;
-    bottom: 0px;
-    background: #fff;
-  }  */
+
