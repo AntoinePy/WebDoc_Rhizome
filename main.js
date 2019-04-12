@@ -12,7 +12,10 @@ $("#atelier").mapster(
 });
 setTimeout( function() {
     document.getElementsByTagName( "input" )[0].click();
-}, 1000 );
+    document.getElementsByTagName( "input" )[1].click();
+    document.getElementsByTagName( "input" )[2].click();
+    document.getElementsByTagName( "input" )[3].click();
+}, 1000 ); 
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var femme = document.getElementById('woman');

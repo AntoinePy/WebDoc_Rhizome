@@ -1,0 +1,243 @@
+@font-face
+  font-family: "fontDialog"
+  src: url('fonts/Zcool.ttf')
+body
+  background-color: black
+
+img
+  max-width: 100%
+  max-height: 100%
+  height: auto
+  width: auto
+
+button
+    margin-top: 1em
+    margin-bottom: 1em
+.modal
+  display: none
+  position: fixed
+  z-index: 1
+  padding-top: 100px
+  padding-left: 500px
+  left: 0
+  top: 0
+  width: 250px
+  height: 250px
+  overflow: auto
+  color: black
+  text-align: center
+  font-size: 24px
+  font-weight: 900
+
+
+.modal-content
+  align-items: center
+  background-color: #F9D992
+  margin: auto
+  border: 5px solid #F9D992
+  border-radius: 50%
+  font-family: 'fontDialog'
+  text-align: center
+  display: flex
+  flex-direction: column
+  overflow: auto
+  justify-content: center
+
+
+.close
+  color: #aaaaaa
+  font-size: 28px
+  font-weight: bold
+  margin-left: 20px
+  &:hover, &:focus
+    color: #000
+    text-decoration: none
+    cursor: pointer
+
+$brown: #a57746
+$brown2: darken( $brown, 5% )
+$brown3: darken( $brown2, 10% )
+$brown4: darken( $brown3, 10% )
+$size: 28px
+$speed: 0.3s
+$outline: 0 0 0.5px 0px $brown4
+$hover-angle: 40deg
+$open-angle: 125deg
+
+.boxy,
+.boxy label,
+.boxy input 
+    
+    appearance: none
+    width: $size
+    height: $size
+    display: block
+    position: relative
+    outline: none
+    user-select: none
+    
+
+
+.boxy 
+    
+    background: linear-gradient( 300deg, $brown2, $brown3 )
+    //box-shadow: inset 2px 2px 10px -1px $brown4
+    &:before 
+        
+        content: "\f00c"
+        position: absolute
+        left: 0
+        right: 0
+        line-height: $size
+        color: white
+        text-align: center
+        font-family: "Font Awesome 5 Free"
+        font-size: 16px
+        
+    
+
+    label, 
+    input 
+
+        &,
+        &:before,
+        &:after 
+            
+            content: ""
+            position: absolute
+            perspective: 200px
+            
+        
+
+        &:before,
+        &:after 
+
+            box-shadow: $outline
+            transition: all $speed ease
+            
+        
+
+    
+    
+    label 
+        
+        text-indent: $size*2
+        white-space: nowrap
+        line-height: $size
+        
+    
+
+    label:before,
+    label:after 
+
+        width: 50%
+        height: 100%
+        top: 0
+        left: 0
+        transform-origin: left
+        background: linear-gradient( 270deg, $brown, $brown2 )
+
+    
+
+    label:after 
+        right: 0
+        left: auto
+        transform-origin: right
+        background: linear-gradient( 90deg, $brown, $brown2 )
+    
+
+
+    input:before,
+    input:after 
+
+        width: 100%
+        height: 50%
+        transform-origin: top
+        background: linear-gradient( 0deg, $brown, $brown2 )
+
+    
+
+    input:after 
+        bottom: 0
+        transform-origin: bottom
+        background: linear-gradient( 180deg, $brown, $brown2 )
+    
+
+
+
+.boxy 
+    
+    input:checked:before 
+        
+        transform: rotate3d( 1, 0, 0, $open-angle )
+        background: linear-gradient( -20deg, $brown, $brown3 )
+        
+    
+    
+    input:checked:after 
+        
+        transform: rotate3d( 1, 0, 0, -$open-angle )
+        background: linear-gradient( 165deg, $brown, $brown3 )
+        
+    
+    
+    input:checked + label:before 
+        
+        transform: rotate3d( 0, 1, 0, -$open-angle )
+        background: linear-gradient( 270deg, $brown, $brown3 )
+        
+    
+    
+    input:checked + label:after 
+        
+        transform: rotate3d( 0, 1, 0, $open-angle )
+        background: linear-gradient( 90deg, $brown, $brown3 )
+        
+    
+    
+    &:hover input:not(:checked) + label:before,
+    input:focus:not(:checked) + label:before 
+
+        transform: rotate3d( 0, 1, 0, -$hover-angle )
+        box-shadow: $outline, 3px 0px 2px rgba( 0, 0, 0, 0.2 )
+
+    
+
+    &:hover input:not(:checked) + label:after,
+    input:focus:not(:checked) + label:after 
+
+        transform: rotate3d( 0, 1, 0, $hover-angle )
+        box-shadow: $outline, -3px 0px 2px rgba( 0, 0, 0, 0.2 )
+
+    
+    
+    input:focus 
+        outline: 1px dotted !important
+        outline-offset: 2px
+    
+    
+    input:focus:checked 
+        outline-offset:5px
+    
+
+.boxy label:before 
+    transition-delay: $speed/3
+
+
+.boxy label:after 
+    transition-delay: $speed/2
+
+    
+.boxy input:checked + label:before
+    transition-delay: 0s
+
+
+.boxy input:checked + label:after
+    transition-delay: 0.1s
+
+
+.boxy input:checked:before 
+    transition-delay: $speed/2
+
+.boxy input:checked:after 
+    transition-delay: $speed/1.3

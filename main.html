@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>La réponse est dans le tableau webdoc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="main.js"></script>
@@ -30,31 +31,27 @@
     <div id="myModal" class="modal">
             <div class="modal-content">
                     <p>Conversation1<span class="close">&times;</span> </p>
-                    <div>
-                    <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="oui">Oui</label>
+                    <div class="boxy open">
+                    <input id ="chk" type="checkbox" name="frep1[][]"><label for="chk">Oui</label>
                     </div>
-                    <div>
-                    <input type="checkbox" class="radio" name="frep1[][]" value="1"><label for="non">Non</label>
+                    <div class="boxy open">
+                    <input  id ="chk" type="checkbox"  name="frep1[][]"><label for="chk">Non</label>
                     </div>
                     <button id="val1">Valider</button>
                     
-            </div>
-            <div class="circle1"></div>
-            <div class="circle2"></div>     
+            </div>    
     </div>  
     <div id="myModal2" class="modal">
             <div class="modal-content">
                     <p>Conversation2<span class="close">&times;</span></p>
                     <div class="boxy open">
-                    <input id ="chk" type="checkbox" class="radio" name="frep2[][]" value="1"><label for="oui">Oui</label>
+                    <input id ="chk" type="checkbox" class="radio" name="frep2[][]"><label for="chk">Oui</label>
                     </div>
-                    <div>
-                    <input type="checkbox" class="radio" name="frep2[][]" value="1"><label for="non">Non</label>
+                    <div class="boxy open" >
+                    <input id ="chk" type="checkbox" class="radio" name="frep2[][]"><label for="chk">Non</label>
                     </div>
                     <button id="val2">Valider</button>   
-            </div>
-            <div class="circle1"></div>
-            <div class="circle2"></div>        
+            </div>        
     </div> 
 <script src="js/jquery.rwdImageMaps.min.js"></script>
 <script src="js/jquery.imagemapster.min.js"></script>
