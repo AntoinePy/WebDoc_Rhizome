@@ -1,6 +1,26 @@
 @font-face
   font-family: "fontDialog"
   src: url('fonts/Zcool.ttf')
+
+$brown: #a57746
+$brown2: darken( $brown, 5% )
+$brown3: darken( $brown2, 10% )
+$brown4: darken( $brown3, 10% )
+$size: 28px
+$speed: 0.3s
+$outline: 0 0 0.5px 0px $brown4
+$hover-angle: 40deg
+$open-angle: 125deg
+
+html 
+    
+    color: $brown4
+    padding: 10px 30px
+    letter-spacing: -1.5px
+    font-size: 28px
+    
+    
+    
 body
   background-color: black
 
@@ -21,7 +41,7 @@ button
   padding-left: 500px
   left: 0
   top: 0
-  width: 250px
+  width: 300px
   height: 250px
   overflow: auto
   color: black
@@ -54,16 +74,6 @@ button
     text-decoration: none
     cursor: pointer
 
-$brown: #a57746
-$brown2: darken( $brown, 5% )
-$brown3: darken( $brown2, 10% )
-$brown4: darken( $brown3, 10% )
-$size: 28px
-$speed: 0.3s
-$outline: 0 0 0.5px 0px $brown4
-$hover-angle: 40deg
-$open-angle: 125deg
-
 .boxy,
 .boxy label,
 .boxy input 
@@ -81,7 +91,9 @@ $open-angle: 125deg
 .boxy 
     
     background: linear-gradient( 300deg, $brown2, $brown3 )
-    //box-shadow: inset 2px 2px 10px -1px $brown4
+    box-shadow: inset 2px 2px 10px -1px $brown4
+    margin-left: 50px
+    
     &:before 
         
         content: "\f00c"
@@ -219,6 +231,9 @@ $open-angle: 125deg
     input:focus:checked 
         outline-offset:5px
     
+    
+
+
 
 .boxy label:before 
     transition-delay: $speed/3
@@ -228,11 +243,11 @@ $open-angle: 125deg
     transition-delay: $speed/2
 
     
-.boxy input:checked + label:before
+.boxy input:checked + label:before 
     transition-delay: 0s
 
 
-.boxy input:checked + label:after
+.boxy input:checked + label:after 
     transition-delay: 0.1s
 
 
@@ -241,3 +256,4 @@ $open-angle: 125deg
 
 .boxy input:checked:after 
     transition-delay: $speed/1.3
+
