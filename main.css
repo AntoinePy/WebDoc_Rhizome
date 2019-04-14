@@ -78,6 +78,7 @@ button {
   background: linear-gradient(300deg, #936a3e, #6f502f);
   box-shadow: inset 2px 2px 10px -1px #4b3620;
   margin-left: 50px;
+  margin-right: 100px;
 }
 .boxy:before {
   content: "";
