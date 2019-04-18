@@ -1,10 +1,16 @@
 var dialog1;
 var dialog2;
 var audio = document.getElementById("guitare");
+var chienAudio = document.getElementById("chien");
 $("#chitarra").click(function(){
     audio.play();
     return false;
 });
+$("#cane").click(function(){
+    chienAudio.play();
+    return false;
+});
+
 $("#atelier").mapster(
 {
     fillColor: 'ff0000',

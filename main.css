@@ -17,6 +17,8 @@ img {
 button {
   margin-top: 1em;
   margin-bottom: 1em;
+  background-color: #a57746;
+  border-color: #a57746;
 }
 
 .modal {
