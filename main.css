@@ -17,6 +17,8 @@ img {
 button {
   margin-top: 1em;
   margin-bottom: 1em;
+  background-color: #a57746;
+  border-color: #a57746;
 }
 
 .modal {
@@ -27,27 +29,12 @@ button {
   padding-left: 500px;
   left: 0;
   top: 0;
-  width: 500px;
-  min-width: 500px;
-  min-height: 400px;
-  max-width: 800px;
-  max-height: 700px;
   color: black;
   text-align: center;
-  font-size: 24px;
-  font-weight: 900;
 }
 
 .modal-content {
-  align-items: center;
   background-color: #F9D992;
-  margin: auto;
-  border: 5px solid #F9D992;
-  border-radius: 50%;
-  font-family: "fontDialog";
-  text-align: center;
-  display: inline-block;
-  justify-content: center;
 }
 
 .close {
@@ -55,6 +42,8 @@ button {
   font-size: 28px;
   font-weight: bold;
   margin-left: 20px;
+  float: right;
+  padding-bottom: 5px;
 }
 .close:hover, .close:focus {
   color: #000;
