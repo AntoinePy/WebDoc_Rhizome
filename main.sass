@@ -37,8 +37,32 @@ button
   color: black
   text-align: center
 
+
 .modal-content
-  background-color: #F9D992
+  width: 400px
+  position: relative
+  margin: 10% auto
+  padding: 5px 20px 13px 20px
+  border-radius: 10px
+  background: #fff
+  background: -moz-linear-gradient(#fff, #999)
+  background: -webkit-linear-gradient(#fff, #999)
+  background: -o-linear-gradient(#fff, #999)
+
+.modal-content:after
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 50%
+  width: 0
+  height: 0
+  border: 20px solid transparent
+  border-top-color: grey
+  border-bottom: 0
+  border-left: 0
+  margin-left: -10px
+  margin-bottom: -20px
+
 
 .close
   color: #aaaaaa
@@ -256,7 +280,7 @@ button
 
 
 .modalDialog:target
-  opacity: 1
+  opacity: 0.75
   pointer-events: auto
 
 
@@ -271,19 +295,7 @@ button
   background: -webkit-linear-gradient(#fff, #999)
   background: -o-linear-gradient(#fff, #999)
 
-.modalDialog > div:after
-  content: ''
-  position: absolute
-  bottom: 0
-  left: 50%
-  width: 0
-  height: 0
-  border: 20px solid transparent
-  border-top-color: #00aabb
-  border-bottom: 0
-  border-left: 0
-  margin-left: -10px
-  margin-bottom: -20px
+
 
 
 
