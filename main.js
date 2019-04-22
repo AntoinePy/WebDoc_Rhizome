@@ -2,12 +2,18 @@ var dialog1;
 var dialog2;
 var audio = document.getElementById("guitare");
 var chienAudio = document.getElementById("chien");
+var chatAudio = document.getElementById("chat");
+
 $("#chitarra").click(function(){
     audio.play();
     return false;
 });
 $("#cane").click(function(){
     chienAudio.play();
+    return false;
+});
+$("#gato").click(function(){
+    chatAudio.play();
     return false;
 });
 
@@ -40,6 +46,9 @@ var baudelaireModal2 = document.getElementById('baudelaireModal2');
 
 var irlandaiseModal  = document.getElementById('irlandaiseModal');
 var irlandaiseModal2 = document.getElementById('irlandaiseModal2');
+
+var julietteModal  = document.getElementById('julietteModal');
+var julietteModal2 = document.getElementById('julietteModal2');
 //AREA
 var enfant = document.getElementById('enfant');
 var femme = document.getElementById('woman');
@@ -47,6 +56,8 @@ var napoleon = document.getElementById('napoleon');
 var prudhon = document.getElementById('prudhon');
 var baudelaire = document.getElementById('baudelaire');
 var irlandaise = document.getElementById('irlandaise');
+var juliette = document.getElementById('juliette');
+
 
 //Boutons
 var btn1 = document.getElementById('val1');
@@ -55,6 +66,8 @@ var napoleonBtn1 = document.getElementById('napoleonBtn');
 var prudhonBtn1 = document.getElementById('prudhonBtn');
 var baudelaireBtn1 = document.getElementById('baudelaireBtn');
 var irlandaiseBtn1 = document.getElementById('irlandaiseBtn');
+var julietteBtn1 = document.getElementById('julietteBtn');
+
 
 //Close span
 var span = document.getElementsByClassName("close")[0];
@@ -69,6 +82,8 @@ var spanBaudelaire1 = document.getElementsByClassName("close")[8];
 var spanBaudelaire2 = document.getElementsByClassName("close")[9];
 var spanIrlandaise1 = document.getElementsByClassName("close")[10];
 var spanIrlandaise2 = document.getElementsByClassName("close")[11];
+var spanJuliette1 = document.getElementsByClassName("close")[12];
+var spanJuliette2 = document.getElementsByClassName("close")[13];
 femme.onclick = function(){
     modal.style.display = "block";
 }
@@ -86,6 +101,9 @@ baudelaire.onclick = function(){
 }
 irlandaise.onclick = function(){
     irlandaiseModal.style.display = "block";
+}
+juliette.onclick = function(){
+    julietteModal.style.display = "block";
 }
 span.onclick = function() {
     modal.style.display = "none";
@@ -123,6 +141,12 @@ spanIrlandaise1.onclick = function() {
 spanIrlandaise2.onclick = function() {
     irlandaiseModal2.style.display = "none";
 }
+spanJuliette1.onclick = function() {
+    julietteModal.style.display = "none";
+}
+spanJuliette2.onclick = function() {
+    julietteModal2.style.display = "none";
+}
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
@@ -153,6 +177,10 @@ baudelaireBtn1.onclick = function(){
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
     irlandaiseModal2.style.display = "block";
+}
+julietteBtn1.onclick = function(){
+    julietteModal.style.display = "none";
+    julietteModal2.style.display = "block";
 }
 $("input:checkbox").on('click', function() {
     var $box = $(this);
