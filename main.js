@@ -182,6 +182,51 @@ julietteBtn1.onclick = function(){
     julietteModal.style.display = "none";
     julietteModal2.style.display = "block";
 }
+window.onclick = function(event){
+    if(event.target == modal){
+        modal.style.display = "none";
+    }
+    else if(event.target == modal2){
+        modal2.style.display = "none";
+    }
+    else if(event.target == enfantModal){
+        enfantModal.style.display = "none";
+    }
+    else if(event.target == enfantModal2){
+        enfantModal2.style.display = "none";
+    }
+    else if(event.target == napoleonModal){
+        napoleonModal.style.display = "none";
+    }
+    else if(event.target == napoleonModal2){
+        napoleonModal2.style.display = "none";
+    }
+    else if(event.target == prudhonModal){
+        prudhonModal.style.display = "none";
+    }
+    else if(event.target == prudhonModal2){
+        prudhonModal2.style.display = "none";
+    }
+    else if(event.target == baudelaireModal){
+        baudelaireModal.style.display = "none";
+    }
+    else if(event.target == baudelaireModal2){
+        baudelaireModal2.style.display = "none";
+    }
+    else if(event.target == irlandaiseModal){
+        irlandaiseModal.style.display = "none";
+    }
+    else if(event.target == irlandaiseModal2){
+        irlandaiseModal2.style.display = "none";
+    }
+    else if(event.target == julietteModal){
+        julietteModal.style.display = "none";
+    }
+    else if(event.target == julietteModal2){
+        julietteModal2.style.display = "none";
+    }
+
+}
 $("input:checkbox").on('click', function() {
     var $box = $(this);
     if ($box.is(":checked")) {
