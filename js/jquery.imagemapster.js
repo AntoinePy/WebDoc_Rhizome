@@ -852,7 +852,7 @@ A jQuery plugin to enhance image maps.
             fillOpacity: 0.7,
             highlight: true,
             stroke: false,
-            strokeColor: 'ff0000',
+            strokeColor: 'ff00',
             strokeOpacity: 1,
             strokeWidth: 1,
             includeKeys: '',

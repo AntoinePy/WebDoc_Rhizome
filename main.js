@@ -22,13 +22,20 @@ $("#atelier").mapster(
     fillColor: 'ff0000',
     fillOpacity: 0.3
 });
+$("#atelier2").mapster(
+    {
+        fillColor: 'ff0000',
+        fillOpacity: 0.3
+    });
 setTimeout( function() {
     document.getElementsByTagName( "input" )[0].click();
     document.getElementsByTagName( "input" )[1].click();
     document.getElementsByTagName( "input" )[2].click();
     document.getElementsByTagName( "input" )[3].click();
 }, 1000 ); 
+//IMG
 
+var atelier = document.getElementById('atelier');
 //Modal
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
@@ -64,9 +71,13 @@ var btn1 = document.getElementById('val1');
 var enfantBtn1 = document.getElementById('enfantBtn');
 var napoleonBtn1 = document.getElementById('napoleonBtn');
 var prudhonBtn1 = document.getElementById('prudhonBtn');
+var prudhonBtn2 = document.getElementById('prudhonBtn2');
 var baudelaireBtn1 = document.getElementById('baudelaireBtn');
+var baudelaireBtn2 = document.getElementById('baudelaireBtn2');
 var irlandaiseBtn1 = document.getElementById('irlandaiseBtn');
 var julietteBtn1 = document.getElementById('julietteBtn');
+var julietteBtn2 = document.getElementById('julietteBtn2');
+
 
 
 //Close span
@@ -89,6 +100,7 @@ femme.onclick = function(){
 }
 enfant.onclick = function(){
     enfantModal.style.display = "block";
+
 }
 napoleon.onclick = function(){
     napoleonModal.style.display = "block";
@@ -170,9 +182,25 @@ prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
     prudhonModal2.style.display = "block";
 }
+prudhonBtn2.onclick = function(){
+    prudhonModal2.style.display = "none";
+    if(document.getElementById("chk8").checked){
+        document.getElementsByTagName("img").item(0).src="img/Proudhon_F1.jpg";
+    }else if(document.getElementById("chk9").checked){
+        document.getElementsByTagName("img").item(0).src="img/Proudhon_F2.jpg";
+    }
+}
 baudelaireBtn1.onclick = function(){
     baudelaireModal.style.display = "none";
     baudelaireModal2.style.display = "block";
+}
+baudelaireBtn2.onclick = function(){
+    baudelaireModal2.style.display = "none";
+    if(document.getElementById("chk10").checked){
+        document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
+    }else if(document.getElementById("chk11").checked){
+        document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
+    }
 }
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
@@ -181,6 +209,14 @@ irlandaiseBtn1.onclick = function(){
 julietteBtn1.onclick = function(){
     julietteModal.style.display = "none";
     julietteModal2.style.display = "block";
+}
+julietteBtn2.onclick = function(){
+    julietteModal2.style.display = "none";
+    if(document.getElementById("chk14").checked){
+        document.getElementsByTagName("img").item(0).src="img/Juliette_F1.jpg";
+    }else if(document.getElementById("chk15").checked){
+        document.getElementsByTagName("img").item(0).src="img/Juliette_F2.jpg";
+    }
 }
 window.onclick = function(event){
     if(event.target == modal){
