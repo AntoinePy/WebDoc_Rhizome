@@ -69,7 +69,9 @@ var juliette = document.getElementById('juliette');
 //Boutons
 var btn1 = document.getElementById('val1');
 var enfantBtn1 = document.getElementById('enfantBtn');
+var enfantBtn2 = document.getElementById('enfantBtn2');
 var napoleonBtn1 = document.getElementById('napoleonBtn');
+var napoleonBtn2 = document.getElementById('napoleonBtn2');
 var prudhonBtn1 = document.getElementById('prudhonBtn');
 var prudhonBtn2 = document.getElementById('prudhonBtn2');
 var baudelaireBtn1 = document.getElementById('baudelaireBtn');
@@ -174,9 +176,25 @@ enfantBtn1.onclick = function(){
     enfantModal.style.display = "none";
     enfantModal2.style.display = "block";
 }
+enfantBtn2.onclick = function(){
+    enfantModal2.style.display = "none";
+    if(document.getElementById("chk4").checked){
+        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
+    }else if(document.getElementById("chk5").checked){
+        document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
+    }
+}
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
     napoleonModal2.style.display = "block";
+}
+napoleonBtn2.onclick = function(){
+    napoleonModal2.style.display = "none";
+    if(document.getElementById("chk6").checked){
+        document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
+    }else if(document.getElementById("chk7").checked){
+        document.getElementsByTagName("img").item(0).src="img/Napoleon_F2.jpg";
+    }
 }
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
