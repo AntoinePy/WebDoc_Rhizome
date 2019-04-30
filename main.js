@@ -3,7 +3,7 @@ var dialog2;
 var audio = document.getElementById("guitare");
 var chienAudio = document.getElementById("chien");
 var chatAudio = document.getElementById("chat");
-
+var modalClass = document.getElementsByClassName('modal');
 $("#chitarra").click(function(){
     audio.play();
     return false;
@@ -22,11 +22,6 @@ $("#atelier").mapster(
     fillColor: 'ff0000',
     fillOpacity: 0.3
 });
-$("#atelier2").mapster(
-    {
-        fillColor: 'ff0000',
-        fillOpacity: 0.3
-    });
 setTimeout( function() {
     document.getElementsByTagName( "input" )[0].click();
     document.getElementsByTagName( "input" )[1].click();
@@ -98,25 +93,45 @@ var spanIrlandaise2 = document.getElementsByClassName("close")[11];
 var spanJuliette1 = document.getElementsByClassName("close")[12];
 var spanJuliette2 = document.getElementsByClassName("close")[13];
 femme.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     modal.style.display = "block";
 }
 enfant.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     enfantModal.style.display = "block";
-
 }
 napoleon.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     napoleonModal.style.display = "block";
 }
 prudhon.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     prudhonModal.style.display = "block";
 }
 baudelaire.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     baudelaireModal.style.display = "block";
 }
 irlandaise.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     irlandaiseModal.style.display = "block";
 }
 juliette.onclick = function(){
+    for(var i=0; i<modalClass.length;i++){
+        modalClass[i].style.display = 'none';
+    }
     julietteModal.style.display = "block";
 }
 span.onclick = function() {
@@ -279,7 +294,6 @@ window.onclick = function(event){
     else if(event.target == julietteModal2){
         julietteModal2.style.display = "none";
     }
-
 }
 $("input:checkbox").on('click', function() {
     var $box = $(this);
