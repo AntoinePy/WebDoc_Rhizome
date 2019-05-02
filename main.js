@@ -92,6 +92,7 @@ var spanIrlandaise1 = document.getElementsByClassName("close")[10];
 var spanIrlandaise2 = document.getElementsByClassName("close")[11];
 var spanJuliette1 = document.getElementsByClassName("close")[12];
 var spanJuliette2 = document.getElementsByClassName("close")[13];
+
 femme.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
@@ -198,6 +199,11 @@ enfantBtn2.onclick = function(){
     }else if(document.getElementById("chk5").checked){
         document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
     }
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
@@ -210,6 +216,11 @@ napoleonBtn2.onclick = function(){
     }else if(document.getElementById("chk7").checked){
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F2.jpg";
     }
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
@@ -222,6 +233,11 @@ prudhonBtn2.onclick = function(){
     }else if(document.getElementById("chk9").checked){
         document.getElementsByTagName("img").item(0).src="img/Proudhon_F2.jpg";
     }
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 baudelaireBtn1.onclick = function(){
     baudelaireModal.style.display = "none";
@@ -234,10 +250,20 @@ baudelaireBtn2.onclick = function(){
     }else if(document.getElementById("chk11").checked){
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
     irlandaiseModal2.style.display = "block";
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 julietteBtn1.onclick = function(){
     julietteModal.style.display = "none";
@@ -250,6 +276,11 @@ julietteBtn2.onclick = function(){
     }else if(document.getElementById("chk15").checked){
         document.getElementsByTagName("img").item(0).src="img/Juliette_F2.jpg";
     }
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
 }
 window.onclick = function(event){
     if(event.target == modal){
