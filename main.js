@@ -98,100 +98,102 @@ femme.onclick = function(){
         modalClass[i].style.display = 'none';
     }
     modal.style.display = "block";
-}
+};
 enfant.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     enfantModal.style.display = "block";
-}
+};
 napoleon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     napoleonModal.style.display = "block";
-}
+};
 prudhon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     prudhonModal.style.display = "block";
-}
+};
 baudelaire.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     baudelaireModal.style.display = "block";
-}
+};
+
 irlandaise.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     irlandaiseModal.style.display = "block";
-}
+};
+
 juliette.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     julietteModal.style.display = "block";
-}
+};
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
 span2.onclick = function() {
     modal2.style.display = "none";
-}
+};
 spanEnfant1.onclick = function() {
     enfantModal.style.display = "none";
-}
+};
 spanEnfant2.onclick = function() {
     enfantModal2.style.display = "none";
-}
+};
 spanNapoleon1.onclick = function() {
     napoleonModal.style.display = "none";
-}
+};
 spanNapoleon2.onclick = function() {
     napoleonModal2.style.display = "none";
-}
+};
 spanPrudhon1.onclick = function() {
     prudhonModal.style.display = "none";
-}
+};
 spanPrudhon2.onclick = function() {
     prudhonModal2.style.display = "none";
-}
+};
 spanBaudelaire1.onclick = function() {
     baudelaireModal.style.display = "none";
-}
+};
 spanBaudelaire2.onclick = function() {
     baudelaireModal2.style.display = "none";
-}
+};
 spanIrlandaise1.onclick = function() {
     irlandaiseModal.style.display = "none";
-}
+};
 spanIrlandaise2.onclick = function() {
     irlandaiseModal2.style.display = "none";
-}
+};
 spanJuliette1.onclick = function() {
     julietteModal.style.display = "none";
-}
+};
 spanJuliette2.onclick = function() {
     julietteModal2.style.display = "none";
-}
+};
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }else if(event.target == modal2){
         modal2.style.display = "none";
     }
-}
+};
 btn1.onclick = function(){
     modal.style.display = "none";
     modal2.style.display = "block";
-}
+};
 enfantBtn1.onclick = function(){
     enfantModal.style.display = "none";
     enfantModal2.style.display = "block";
-}
+};
 enfantBtn2.onclick = function(){
     enfantModal2.style.display = "none";
     if(document.getElementById("chk4").checked){
@@ -204,11 +206,11 @@ enfantBtn2.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
     napoleonModal2.style.display = "block";
-}
+};
 napoleonBtn2.onclick = function(){
     napoleonModal2.style.display = "none";
     if(document.getElementById("chk6").checked){
@@ -221,11 +223,11 @@ napoleonBtn2.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
     prudhonModal2.style.display = "block";
-}
+};
 prudhonBtn2.onclick = function(){
     prudhonModal2.style.display = "none";
     if(document.getElementById("chk8").checked){
@@ -238,11 +240,11 @@ prudhonBtn2.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
 baudelaireBtn1.onclick = function(){
     baudelaireModal.style.display = "none";
     baudelaireModal2.style.display = "block";
-}
+};
 baudelaireBtn2.onclick = function(){
     baudelaireModal2.style.display = "none";
     if(document.getElementById("chk10").checked){
@@ -255,7 +257,7 @@ baudelaireBtn2.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
     irlandaiseModal2.style.display = "block";
@@ -264,7 +266,8 @@ irlandaiseBtn1.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
+
 julietteBtn1.onclick = function(){
     julietteModal.style.display = "none";
     julietteModal2.style.display = "block";
@@ -281,7 +284,7 @@ julietteBtn2.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-}
+};
 window.onclick = function(event){
     if(event.target == modal){
         modal.style.display = "none";
