@@ -93,155 +93,206 @@ var spanIrlandaise1 = document.getElementsByClassName("close")[10];
 var spanIrlandaise2 = document.getElementsByClassName("close")[11];
 var spanJuliette1 = document.getElementsByClassName("close")[12];
 var spanJuliette2 = document.getElementsByClassName("close")[13];
+
 femme.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     modal.style.display = "block";
-}
+};
 enfant.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     enfantModal.style.display = "block";
-}
+};
 napoleon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     napoleonModal.style.display = "block";
-}
+};
 prudhon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     prudhonModal.style.display = "block";
-}
+};
 baudelaire.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     baudelaireModal.style.display = "block";
-}
+};
+
 irlandaise.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     irlandaiseModal.style.display = "block";
-}
+};
+
 juliette.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     julietteModal.style.display = "block";
-}
+};
 span.onclick = function() {
     modal.style.display = "none";
 
 }
 span2.onclick = function() {
     modal2.style.display = "none";
-}
+};
 spanEnfant1.onclick = function() {
     enfantModal.style.display = "none";
     document.location.reload(true);
 }
 spanEnfant2.onclick = function() {
     enfantModal2.style.display = "none";
-}
+};
 spanNapoleon1.onclick = function() {
     napoleonModal.style.display = "none";
-}
+};
 spanNapoleon2.onclick = function() {
     napoleonModal2.style.display = "none";
-}
+};
 spanPrudhon1.onclick = function() {
     prudhonModal.style.display = "none";
-}
+};
 spanPrudhon2.onclick = function() {
     prudhonModal2.style.display = "none";
-}
+};
 spanBaudelaire1.onclick = function() {
     baudelaireModal.style.display = "none";
-}
+};
 spanBaudelaire2.onclick = function() {
     baudelaireModal2.style.display = "none";
-}
+};
 spanIrlandaise1.onclick = function() {
     irlandaiseModal.style.display = "none";
-}
+};
 spanIrlandaise2.onclick = function() {
     irlandaiseModal2.style.display = "none";
-}
+};
 spanJuliette1.onclick = function() {
     julietteModal.style.display = "none";
-}
+};
 spanJuliette2.onclick = function() {
     julietteModal2.style.display = "none";
-}
+};
 window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }else if(event.target == modal2){
         modal2.style.display = "none";
     }
-}
+};
 btn1.onclick = function(){
     modal.style.display = "none";
     modal2.style.display = "block";
-}
+};
 enfantBtn1.onclick = function(){
     enfantModal.style.display = "none";
     enfantModal2.style.display = "block";
-}
+};
 enfantBtn2.onclick = function(){
     enfantModal2.style.display = "none";
     if(document.getElementById("chk4").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     }else if(document.getElementById("chk5").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
     }
-}
+};
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
     napoleonModal2.style.display = "block";
-}
+};
 napoleonBtn2.onclick = function(){
     napoleonModal2.style.display = "none";
     if(document.getElementById("chk6").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
     }else if(document.getElementById("chk7").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F2.jpg";
     }
-}
+
+};
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
     prudhonModal2.style.display = "block";
-}
+};
 prudhonBtn2.onclick = function(){
     prudhonModal2.style.display = "none";
     if(document.getElementById("chk8").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Proudhon_F1.jpg";
     }else if(document.getElementById("chk9").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Proudhon_F2.jpg";
     }
-}
+};
 baudelaireBtn1.onclick = function(){
     baudelaireModal.style.display = "none";
     baudelaireModal2.style.display = "block";
-}
+};
 baudelaireBtn2.onclick = function(){
     baudelaireModal2.style.display = "none";
     if(document.getElementById("chk10").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
     }else if(document.getElementById("chk11").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
-}
+
+};
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
     irlandaiseModal2.style.display = "block";
-}
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+};
+
 julietteBtn1.onclick = function(){
     julietteModal.style.display = "none";
     julietteModal2.style.display = "block";
@@ -249,11 +300,21 @@ julietteBtn1.onclick = function(){
 julietteBtn2.onclick = function(){
     julietteModal2.style.display = "none";
     if(document.getElementById("chk14").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Juliette_F1.jpg";
     }else if(document.getElementById("chk15").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Juliette_F2.jpg";
     }
-}
+};
 window.onclick = function(event){
     if(event.target == modal){
         modal.style.display = "none";
