@@ -234,7 +234,6 @@ baudelaireBtn2.onclick = function(){
     baudelaireModal2.style.display = "none";
     if(document.getElementById("chk10").checked){
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
-        //document.location.reload(true);
     }else if(document.getElementById("chk11").checked){
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
