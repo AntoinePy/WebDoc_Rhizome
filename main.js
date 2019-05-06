@@ -35,7 +35,8 @@ $("#gato").click(function(){
 $("#atelier").mapster(
 {
     fillColor: 'ff0000',
-    fillOpacity: 0.3
+    fillOpacity: 0.3,
+    singleSelect: true
 });
 setTimeout( function() {
     document.getElementsByTagName( "input" )[0].click();
@@ -153,13 +154,15 @@ juliette.onclick = function(){
 };
 span.onclick = function() {
     modal.style.display = "none";
-};
+
+}
 span2.onclick = function() {
     modal2.style.display = "none";
 };
 spanEnfant1.onclick = function() {
     enfantModal.style.display = "none";
-};
+    document.location.reload(true);
+}
 spanEnfant2.onclick = function() {
     enfantModal2.style.display = "none";
 };
