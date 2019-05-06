@@ -248,15 +248,21 @@ baudelaireBtn1.onclick = function(){
 baudelaireBtn2.onclick = function(){
     baudelaireModal2.style.display = "none";
     if(document.getElementById("chk10").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
     }else if(document.getElementById("chk11").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
+
 };
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";
