@@ -20,7 +20,8 @@ $("#gato").click(function(){
 $("#atelier").mapster(
 {
     fillColor: 'ff0000',
-    fillOpacity: 0.3
+    fillOpacity: 0.3,
+    singleSelect: true
 });
 setTimeout( function() {
     document.getElementsByTagName( "input" )[0].click();
@@ -136,12 +137,14 @@ juliette.onclick = function(){
 }
 span.onclick = function() {
     modal.style.display = "none";
+
 }
 span2.onclick = function() {
     modal2.style.display = "none";
 }
 spanEnfant1.onclick = function() {
     enfantModal.style.display = "none";
+    document.location.reload(true);
 }
 spanEnfant2.onclick = function() {
     enfantModal2.style.display = "none";
@@ -231,6 +234,7 @@ baudelaireBtn2.onclick = function(){
     baudelaireModal2.style.display = "none";
     if(document.getElementById("chk10").checked){
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
+        //document.location.reload(true);
     }else if(document.getElementById("chk11").checked){
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
