@@ -77,7 +77,7 @@ var prudhon = document.getElementById('prudhon');
 var baudelaire = document.getElementById('baudelaire');
 var irlandaise = document.getElementById('irlandaise');
 var juliette = document.getElementById('juliette');
-
+var eastereggs = document.getElementById('eastereggs');
 //Boutons
 var btn1 = document.getElementById('val1');
 var enfantBtn1 = document.getElementById('enfantBtn');
@@ -151,6 +151,14 @@ juliette.onclick = function(){
         modalClass[i].style.display = 'none';
     }
     julietteModal.style.display = "block";
+};
+eastereggs.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    window.open('https://fr.wikipedia.org/wiki/Gustave_Courbet','_blank');
 };
 span.onclick = function() {
     modal.style.display = "none";
