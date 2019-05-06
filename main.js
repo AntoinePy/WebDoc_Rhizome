@@ -197,15 +197,20 @@ enfantBtn1.onclick = function(){
 enfantBtn2.onclick = function(){
     enfantModal2.style.display = "none";
     if(document.getElementById("chk4").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     }else if(document.getElementById("chk5").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
     }
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
 };
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
@@ -214,15 +219,21 @@ napoleonBtn1.onclick = function(){
 napoleonBtn2.onclick = function(){
     napoleonModal2.style.display = "none";
     if(document.getElementById("chk6").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
     }else if(document.getElementById("chk7").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F2.jpg";
     }
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
+
 };
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
@@ -231,15 +242,20 @@ prudhonBtn1.onclick = function(){
 prudhonBtn2.onclick = function(){
     prudhonModal2.style.display = "none";
     if(document.getElementById("chk8").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Proudhon_F1.jpg";
     }else if(document.getElementById("chk9").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Proudhon_F2.jpg";
     }
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
 };
 baudelaireBtn1.onclick = function(){
     baudelaireModal.style.display = "none";
@@ -281,15 +297,20 @@ julietteBtn1.onclick = function(){
 julietteBtn2.onclick = function(){
     julietteModal2.style.display = "none";
     if(document.getElementById("chk14").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Juliette_F1.jpg";
     }else if(document.getElementById("chk15").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
         document.getElementsByTagName("img").item(0).src="img/Juliette_F2.jpg";
     }
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
 };
 window.onclick = function(event){
     if(event.target == modal){
