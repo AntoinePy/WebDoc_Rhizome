@@ -5,14 +5,29 @@ var chienAudio = document.getElementById("chien");
 var chatAudio = document.getElementById("chat");
 var modalClass = document.getElementsByClassName('modal');
 $("#chitarra").click(function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
     audio.play();
     return false;
 });
 $("#cane").click(function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
     chienAudio.play();
     return false;
 });
 $("#gato").click(function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
     chatAudio.play();
     return false;
 });
@@ -27,10 +42,11 @@ setTimeout( function() {
     document.getElementsByTagName( "input" )[1].click();
     document.getElementsByTagName( "input" )[2].click();
     document.getElementsByTagName( "input" )[3].click();
-}, 1000 ); 
-//IMG
+}, 1000 );
 
+//IMG
 var atelier = document.getElementById('atelier');
+
 //Modal
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
@@ -51,6 +67,7 @@ var irlandaiseModal2 = document.getElementById('irlandaiseModal2');
 
 var julietteModal  = document.getElementById('julietteModal');
 var julietteModal2 = document.getElementById('julietteModal2');
+
 //AREA
 var enfant = document.getElementById('enfant');
 var femme = document.getElementById('woman');
@@ -59,7 +76,6 @@ var prudhon = document.getElementById('prudhon');
 var baudelaire = document.getElementById('baudelaire');
 var irlandaise = document.getElementById('irlandaise');
 var juliette = document.getElementById('juliette');
-
 
 //Boutons
 var btn1 = document.getElementById('val1');
@@ -74,8 +90,6 @@ var baudelaireBtn2 = document.getElementById('baudelaireBtn2');
 var irlandaiseBtn1 = document.getElementById('irlandaiseBtn');
 var julietteBtn1 = document.getElementById('julietteBtn');
 var julietteBtn2 = document.getElementById('julietteBtn2');
-
-
 
 //Close span
 var span = document.getElementsByClassName("close")[0];
@@ -197,11 +211,7 @@ enfantBtn1.onclick = function(){
 enfantBtn2.onclick = function(){
     enfantModal2.style.display = "none";
     if(document.getElementById("chk4").checked){
-        $("#atelier").mapster(
-            {
-                fillColor: 'ff0000',
-                fillOpacity: 0.3
-            });
+
         document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     }else if(document.getElementById("chk5").checked){
         $("#atelier").mapster(
@@ -233,12 +243,13 @@ napoleonBtn2.onclick = function(){
             });
         document.getElementsByTagName("img").item(0).src="img/Napoleon_F2.jpg";
     }
-
 };
+
 prudhonBtn1.onclick = function(){
     prudhonModal.style.display = "none";
     prudhonModal2.style.display = "block";
 };
+
 prudhonBtn2.onclick = function(){
     prudhonModal2.style.display = "none";
     if(document.getElementById("chk8").checked){
@@ -278,7 +289,6 @@ baudelaireBtn2.onclick = function(){
             });
         document.getElementsByTagName("img").item(0).src="img/Baudelaire_F2.jpg";
     }
-
 };
 irlandaiseBtn1.onclick = function(){
     irlandaiseModal.style.display = "none";

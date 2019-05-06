@@ -13,6 +13,7 @@ img {
   height: auto;
   width: auto;
   display: inline-block;
+  background-color: #4CAF50;
 }
 
 button {
@@ -208,8 +209,5 @@ button {
 .boxy input:checked:after {
   transition-delay: 0.2307692308s;
 }
-/* .img-baudelaire {
-  visibility: "hidden";
-}
- */
+
 /*# sourceMappingURL=main.css.map */
