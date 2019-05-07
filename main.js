@@ -4,6 +4,10 @@ var audio = document.getElementById("guitare");
 var chienAudio = document.getElementById("chien");
 var chatAudio = document.getElementById("chat");
 var modalClass = document.getElementsByClassName('modal');
+var titre = document.getElementById("titre");
+$(function () {
+    $('p').textillate({ in: { effect: 'fadeIn' } });
+})
 $("#chitarra").click(function(){
     $("#atelier").mapster(
         {
@@ -223,7 +227,11 @@ enfantBtn1.onclick = function(){
 enfantBtn2.onclick = function(){
     enfantModal2.style.display = "none";
     if(document.getElementById("chk4").checked){
-
+            $("#atelier").mapster(
+                {
+                    fillColor: 'ff0000',
+                    fillOpacity: 0.3
+                });
         document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     }else if(document.getElementById("chk5").checked){
         $("#atelier").mapster(
