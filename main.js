@@ -89,6 +89,7 @@ var prudhonBtn2 = document.getElementById('prudhonBtn2');
 var baudelaireBtn1 = document.getElementById('baudelaireBtn');
 var baudelaireBtn2 = document.getElementById('baudelaireBtn2');
 var irlandaiseBtn1 = document.getElementById('irlandaiseBtn');
+var irlandaiseBtn2 = document.getElementById('irlandaiseBtn2');
 var julietteBtn1 = document.getElementById('julietteBtn');
 var julietteBtn2 = document.getElementById('julietteBtn2');
 
@@ -309,6 +310,24 @@ irlandaiseBtn1.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
+};
+irlandaiseBtn2.onclick = function(){
+    irlandaiseModal2.style.display = "none";
+    if(document.getElementById("chk12").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
+        document.getElementsByTagName("img").item(0).src="img/Irlandaise_F1.jpg";
+    }else if(document.getElementById("chk13").checked){
+        $("#atelier").mapster(
+            {
+                fillColor: 'ff0000',
+                fillOpacity: 0.3
+            });
+        document.getElementsByTagName("img").item(0).src="img/Irlandaise_F2.jpg";
+    }
 };
 
 julietteBtn1.onclick = function(){
