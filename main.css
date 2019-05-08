@@ -23,28 +23,50 @@ button {
   border-color: #a57746;
 }
 
-.modal {
+p {
+  margin-top: 2.5em;
+  margin-left: 1.5em;
+  width: 22em;
+}
+
+.reponse:hover {
+  color: #5F5E3D;
+}
+
+#enfantModal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 50px;
-  padding-left: 650px;
+  padding-top: 160px;
+  padding-left: 590px;
   left: 0;
   top: 0;
-  color: black;
+  color: #312D2E;
+  text-align: center;
+}
+
+#enfantModal2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 240px;
+  padding-left: 450px;
+  left: 0;
+  top: 0;
+  color: #312D2E;
   text-align: center;
 }
 
 .modal-content {
   width: 400px;
+  height: 200px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#C79C6F, #a57746);
-  background: -webkit-linear-gradient(#C79C6F, #a57746);
-  background: -o-linear-gradient(#C79C6F, #a57746);
+  background: rgba(180, 154, 101, 0.8);
+  background-image: url(img/modele4.png);
+  background-size: 440px 218px;
 }
 
 .modal-content:after {
@@ -55,7 +77,7 @@ button {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-top-color: #a57746;
+  border-top-color: rgba(180, 154, 101, 0.8);
   border-bottom: 0;
   border-left: 0;
   margin-left: -10px;
@@ -66,7 +88,8 @@ button {
   color: #aaaaaa;
   font-size: 28px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-top: 0.1em;
+  margin-right: 1.25em;
   float: right;
   padding-bottom: 5px;
 }

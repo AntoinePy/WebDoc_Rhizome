@@ -120,6 +120,7 @@ femme.onclick = function(){
     modal.style.display = "block";
 };
 enfant.onclick = function(){
+    $('#1').css('overflow', 'hidden');
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
