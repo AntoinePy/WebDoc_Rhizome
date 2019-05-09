@@ -6,7 +6,7 @@ var chatAudio = document.getElementById("chat");
 var modalClass = document.getElementsByClassName('modal');
 var titre = document.getElementById("titre");
 $(function () {
-    $('p').textillate({ in: { effect: 'fadeIn' } });
+    $('.text').textillate({ in: { effect: 'fadeIn' } });
 })
 $("#chitarra").click(function(){
     $("#atelier").mapster(
