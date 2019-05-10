@@ -92,7 +92,7 @@ button {
   background-size: 440px 168px;
 }
 
-.modal-content:after {
+.text-content:after {
   content: "";
   position: absolute;
   bottom: 0;
