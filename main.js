@@ -56,7 +56,7 @@ var atelier = document.getElementById('atelier');
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var enfantModal = document.getElementById('enfantModal');
-var enfantModal2 = document.getElementById('enfantModal2');
+var enfantModalChoix1 = document.getElementById('enfantModalChoix1');
 
 var napoleonModal = document.getElementById('napoleonModal');
 var napoleonModal2 = document.getElementById('napoleonModal2');
@@ -100,8 +100,8 @@ var julietteBtn2 = document.getElementById('julietteBtn2');
 //Close span
 var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
-var spanEnfant1 = document.getElementsByClassName("close")[2];
-var spanEnfant2 = document.getElementsByClassName("close")[3];
+var spanEnfant = document.getElementsByClassName("close")[2];
+var spanEnfantChoix1 = document.getElementsByClassName("close")[3];
 var spanNapoleon1 = document.getElementsByClassName("close")[4];
 var spanNapoleon2 = document.getElementsByClassName("close")[5];
 var spanPrudhon1 = document.getElementsByClassName("close")[6];
@@ -120,11 +120,15 @@ femme.onclick = function(){
     modal.style.display = "block";
 };
 enfant.onclick = function(){
-    $('#1').css('overflow', 'hidden');
-    for(var i=0; i<modalClass.length;i++){
-        modalClass[i].style.display = 'none';
-    }
     enfantModal.style.display = "block";
+    setTimeout( function(){
+        enfantModalChoix1.style.display = "block";
+        enfantModalChoix2.style.display = "block";
+    } , 8000);
+
+
+
+
 };
 napoleon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
@@ -173,12 +177,12 @@ span.onclick = function() {
 span2.onclick = function() {
     modal2.style.display = "none";
 };
-spanEnfant1.onclick = function() {
+spanEnfant.onclick = function() {
     enfantModal.style.display = "none";
     document.location.reload(true);
 }
-spanEnfant2.onclick = function() {
-    enfantModal2.style.display = "none";
+spanEnfantChoix1.onclick = function() {
+    enfantModalChoix1.style.display = "none";
 };
 spanNapoleon1.onclick = function() {
     napoleonModal.style.display = "none";
@@ -221,27 +225,23 @@ btn1.onclick = function(){
     modal.style.display = "none";
     modal2.style.display = "block";
 };
-enfantBtn1.onclick = function(){
-    enfantModal.style.display = "none";
-    enfantModal2.style.display = "block";
-};
-enfantBtn2.onclick = function(){
-    enfantModal2.style.display = "none";
-    if(document.getElementById("chk4").checked){
+enfantModalChoix1.onclick = function(){
+    enfantModalChoix1.style.display = "none";
+    enfantModalChoix2.style.display = "none";
             $("#atelier").mapster(
                 {
                     fillColor: 'ff0000',
                     fillOpacity: 0.3
                 });
-        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
-    }else if(document.getElementById("chk5").checked){
-        $("#atelier").mapster(
-            {
-                fillColor: 'ff0000',
-                fillOpacity: 0.3
-            });
-        document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
-    }
+        document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
+    };
+enfantModalChoix2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    document.getElementsByTagName("img").item(0).src = "img/Emile_F2.jpg";
 };
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";

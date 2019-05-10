@@ -20,9 +20,8 @@
 
 
 </head>
-<body id="1">
+<body>
     <audio  id="guitare" src="audio/jeuxinterdits-v2.wav"></audio>
->>>>>>> Stashed changes
     <audio id="chien" src="audio/chien.mp3"></audio>
     <audio id="chat" src="audio/chat.mp3"></audio>
     <div>
@@ -59,7 +58,7 @@
             </div>
     </div>
     <div id="myModal2" class="modal">
-            <div class="modal-content">
+            <div  class="modal-content">
                     <p>Conversation2<span class="close">&times;</span></p>
                     <div class="boxy open">
                     <input id ="chk2" type="checkbox" class="radio" name="frep2[][]"><label for="chk2">Oui</label>
@@ -73,8 +72,9 @@
             </div>        
     </div>
     <div id="enfantModal" class="modal">
-        <div class="modal-content">
+        <div class="text-content">
                 <span class="close">&times;</span>
+
                 <p> <b>Courbet :</b> Émile, fais bien attention comment un peintre prodigieux laisse glisser le pinceau sur son oeuvre.
                 Quand tu auras maîtrisé la technique, tu pourras porter mon nom !</p>
                 <button id="enfantBtn">Valider</button>   
@@ -87,7 +87,33 @@
                     <p class="reponse"><i class="fas fa-arrow-right"></i> Je ne veux pas être peintre ! je préfère garder le nom de ma mère</p>
                     <p for="chk5" class="reponse"><i class="fas fa-arrow-right"></i> d'accord papa, tu ne seras pas déçu !</p>
                 <button id="enfantBtn2">Valider</button>
+
+                <div class="content-text">
+                    <p>
+                        <b>Courbet :</b><span class="text"> Émile fais attention comment un peintre prodigieux laisse glisser le pinceau. Quand tu auras maîtrisé la technique je te donnerai enfin mon nom, est-ce que c’est clair ?</span>
+                    </p>
+                </div>
+        </div>        
+    </div>
+    <div id="enfantModalChoix1" class="modal">
+            <div class="text-reponse">
+                <span class="close">&times;</span>
+                <div class="content-text">
+                        <p id="chk4" class="reponse">
+                            <span class="text"> Je veux pas être peintre ! Je préfère jouer avec mon chat et garder le nom de ma mère : Binet.</span>
+                        </p>
+                </div>
             </div>        
+    </div>
+    <div id="enfantModalChoix2" class="modal">
+        <div class="text-reponse">
+            <span class="close">&times;</span>
+            <div class="content-text">
+                    <p id="chk5" class="reponse">
+                        <span for="chk5" class="text">Oui papa je t’écoute</span>
+                    </p>
+            </div>
+        </div>
     </div>
 
     <div id="napoleonModal" class="modal">

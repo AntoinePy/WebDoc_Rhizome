@@ -23,10 +23,10 @@ button {
   border-color: #a57746;
 }
 
-p {
-  margin-top: 2.5em;
+.content-text {
+  margin-top: 2em;
   margin-left: 1.5em;
-  width: 22em;
+  width: 21em;
 }
 
 .reponse:hover {
@@ -37,7 +37,6 @@ p {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 160px;
   padding-left: 590px;
   left: 0;
   top: 0;
@@ -45,28 +44,52 @@ p {
   text-align: center;
 }
 
-#enfantModal2 {
+#enfantModalChoix1 {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 240px;
-  padding-left: 450px;
+  padding-top: 180px;
+  padding-left: 350px;
   left: 0;
   top: 0;
   color: #312D2E;
-  text-align: center;
+  text-align: justify;
 }
 
-.modal-content {
+#enfantModalChoix2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 180px;
+  padding-left: 800px;
+  left: 0;
+  top: 0;
+  color: #312D2E;
+  text-align: justify;
+}
+
+.text-content {
   width: 400px;
-  height: 200px;
+  height: 150px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: rgba(180, 154, 101, 0.85);
   background-image: url(img/modele4.png);
-  background-size: 440px 218px;
+  background-size: 440px 168px;
+}
+
+.text-reponse {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: rgba(180, 154, 101, 0.85);
+  background-image: url(img/modele4.png);
+  background-size: 440px 168px;
 }
 
 .modal-content:after {
