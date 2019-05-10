@@ -56,7 +56,8 @@ var atelier = document.getElementById('atelier');
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var enfantModal = document.getElementById('enfantModal');
-var enfantModalChoix1 = document.getElementById('enfantModalChoix1');
+var reponseEnfant1 = document.getElementById('reponseEnfant1');
+var reponseEnfant2 = document.getElementById('reponseEnfant2');
 
 var napoleonModal = document.getElementById('napoleonModal');
 var napoleonModal2 = document.getElementById('napoleonModal2');
@@ -84,8 +85,6 @@ var juliette = document.getElementById('juliette');
 var eastereggs = document.getElementById('eastereggs');
 //Boutons
 var btn1 = document.getElementById('val1');
-var enfantBtn1 = document.getElementById('enfantBtn');
-var enfantBtn2 = document.getElementById('enfantBtn2');
 var napoleonBtn1 = document.getElementById('napoleonBtn');
 var napoleonBtn2 = document.getElementById('napoleonBtn2');
 var prudhonBtn1 = document.getElementById('prudhonBtn');
@@ -225,17 +224,15 @@ btn1.onclick = function(){
     modal.style.display = "none";
     modal2.style.display = "block";
 };
-enfantModalChoix1.onclick = function(){
-    enfantModalChoix1.style.display = "none";
-    enfantModalChoix2.style.display = "none";
+reponseEnfant1.onclick = function(){
             $("#atelier").mapster(
                 {
                     fillColor: 'ff0000',
                     fillOpacity: 0.3
                 });
-        document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
+        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     };
-enfantModalChoix2.onclick = function() {
+reponseEnfant2.onclick = function() {
     $("#atelier").mapster(
         {
             fillColor: 'ff0000',
