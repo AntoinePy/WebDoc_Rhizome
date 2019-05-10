@@ -7,7 +7,7 @@ var modalClass = document.getElementsByClassName('modal');
 var titre = document.getElementById("titre");
 $(function () {
     $('.text').textillate({ in: { effect: 'fadeIn' } });
-})
+});
 $("#chitarra").click(function(){
     $("#atelier").mapster(
         {
@@ -49,15 +49,76 @@ setTimeout( function() {
     document.getElementsByTagName( "input" )[3].click();
 }, 1000 );
 
+
+// variable enfant
+$enfant =  $("#enfant");
+$enfantModal = $("#enfantModal");
+$reponseEnfant1= $("#reponseEnfant1");
+$reponseEnfant2 = $("#reponseEnfant2");
+$spanEnfant = $("#spanEnfant");
+
+//Enfant display modal
+enfant.onclick = function(){
+    enfantModal.style.display = "block";
+    setTimeout( function(){
+        enfantModalChoix1.style.display = "block";
+        enfantModalChoix2.style.display = "block";
+    } , 8000);
+
+};
+//Réponse 1 est cliquer
+reponseEnfant1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    enfantModal.style.display = "none";
+    enfantModalChoix1.style.display = "none";
+    enfantModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
+    } , 1000);
+
+};
+//Réponse 2 est cliqué
+reponseEnfant2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    enfantModal.style.display = "none";
+    enfantModalChoix1.style.display = "none";
+    enfantModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Emile_F2.jpg";
+    } , 1000);
+
+};
+//Tout fermer
+spanEnfant.onclick = function () {
+    enfantModalChoix1.style.display = "none";
+    enfantModalChoix2.style.display = "none";
+    enfantModal.style.display = "none";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
 //IMG
 var atelier = document.getElementById('atelier');
 
-//Modal
-var modal = document.getElementById('myModal');
-var modal2 = document.getElementById('myModal2');
-var enfantModal = document.getElementById('enfantModal');
-var reponseEnfant1 = document.getElementById('reponseEnfant1');
-var reponseEnfant2 = document.getElementById('reponseEnfant2');
+
 
 var napoleonModal = document.getElementById('napoleonModal');
 var napoleonModal2 = document.getElementById('napoleonModal2');
@@ -75,7 +136,7 @@ var julietteModal  = document.getElementById('julietteModal');
 var julietteModal2 = document.getElementById('julietteModal2');
 
 //AREA
-var enfant = document.getElementById('enfant');
+
 var femme = document.getElementById('woman');
 var napoleon = document.getElementById('napoleon');
 var prudhon = document.getElementById('prudhon');
@@ -97,7 +158,7 @@ var julietteBtn1 = document.getElementById('julietteBtn');
 var julietteBtn2 = document.getElementById('julietteBtn2');
 
 //Close span
-var span = document.getElementsByClassName("close")[0];
+/*var span = document.getElementsByClassName("close")[0];
 var span2 = document.getElementsByClassName("close")[1];
 var spanEnfant = document.getElementsByClassName("close")[2];
 var spanEnfantChoix1 = document.getElementsByClassName("close")[3];
@@ -111,24 +172,14 @@ var spanIrlandaise1 = document.getElementsByClassName("close")[10];
 var spanIrlandaise2 = document.getElementsByClassName("close")[11];
 var spanJuliette1 = document.getElementsByClassName("close")[12];
 var spanJuliette2 = document.getElementsByClassName("close")[13];
-
+*/
 femme.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
     }
     modal.style.display = "block";
 };
-enfant.onclick = function(){
-    enfantModal.style.display = "block";
-    setTimeout( function(){
-        enfantModalChoix1.style.display = "block";
-        enfantModalChoix2.style.display = "block";
-    } , 8000);
 
-
-
-
-};
 napoleon.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
@@ -168,13 +219,6 @@ eastereggs.onclick = function(){
             fillOpacity: 0.3
         });
     window.open('https://fr.wikipedia.org/wiki/Gustave_Courbet','_blank');
-};
-span.onclick = function() {
-    modal.style.display = "none";
-
-}
-span2.onclick = function() {
-    modal2.style.display = "none";
 };
 spanEnfant.onclick = function() {
     enfantModal.style.display = "none";
@@ -224,22 +268,7 @@ btn1.onclick = function(){
     modal.style.display = "none";
     modal2.style.display = "block";
 };
-reponseEnfant1.onclick = function(){
-            $("#atelier").mapster(
-                {
-                    fillColor: 'ff0000',
-                    fillOpacity: 0.3
-                });
-        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
-    };
-reponseEnfant2.onclick = function() {
-    $("#atelier").mapster(
-        {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
-        });
-    document.getElementsByTagName("img").item(0).src = "img/Emile_F2.jpg";
-};
+
 napoleonBtn1.onclick = function(){
     napoleonModal.style.display = "none";
     napoleonModal2.style.display = "block";

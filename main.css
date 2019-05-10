@@ -24,9 +24,13 @@ button {
 }
 
 .content-text {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: 1.5em;
   width: 21em;
+}
+
+.content-reponse {
+  margin-top: 1.5em;
 }
 
 .reponse:hover {
@@ -49,7 +53,7 @@ button {
   position: fixed;
   z-index: 1;
   padding-top: 180px;
-  padding-left: 350px;
+  padding-left: 320px;
   left: 0;
   top: 0;
   color: #312D2E;
@@ -61,7 +65,7 @@ button {
   position: fixed;
   z-index: 1;
   padding-top: 180px;
-  padding-left: 800px;
+  padding-left: 900px;
   left: 0;
   top: 0;
   color: #312D2E;
@@ -70,26 +74,25 @@ button {
 
 .text-content {
   width: 400px;
-  height: 150px;
+  height: 100px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: rgba(180, 154, 101, 0.85);
   background-image: url(img/modele4.png);
-  background-size: 440px 168px;
+  background-size: 440px 118px;
 }
 
 .text-reponse {
-  width: 400px;
-  height: 100px;
   position: absolute;
-  margin: 10% auto;
+  width: 350px;
+  height: 80px;
   padding: 5px 20px 13px 20px;
   border-radius: 10px;
   background: rgba(180, 154, 101, 0.85);
-  background-image: url(img/modele4.png);
-  background-size: 440px 168px;
+  background-image: url(img/modele3.png);
+  background-size: 390px 98px;
 }
 
 .text-content:after {
@@ -111,8 +114,7 @@ button {
   color: #aaaaaa;
   font-size: 28px;
   font-weight: bold;
-  margin-top: 0.1em;
-  margin-right: 1.25em;
+  margin-right: 0.6em;
   float: right;
   padding-bottom: 5px;
 }
