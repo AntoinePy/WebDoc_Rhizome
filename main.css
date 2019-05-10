@@ -38,7 +38,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -50,7 +50,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -73,7 +73,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -85,7 +85,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -108,7 +108,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -120,7 +120,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -143,7 +143,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -155,7 +155,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -178,7 +178,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -190,7 +190,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -213,7 +213,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 320px;
   left: 0;
   top: 0;
@@ -225,7 +225,7 @@ button {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 220px;
+  padding-top: 230px;
   padding-left: 900px;
   left: 0;
   top: 0;
@@ -249,7 +249,7 @@ button {
 
 .text-content {
   width: 400px;
-  height: 150px;
+  height: 160px;
   position: relative;
   margin: 10% auto;
   padding: 5px 20px 13px 20px;
