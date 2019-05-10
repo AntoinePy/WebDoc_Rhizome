@@ -52,13 +52,13 @@ setTimeout( function() {
 //////////////////////////////////////// Enfant ////////////////////////////////////////////////
 
 // variable enfant
-$enfant =  $("#enfant");
-$enfantModal = $("#enfantModal");
-$reponseEnfant1= $("#reponseEnfant1");
-$reponseEnfant2 = $("#reponseEnfant2");
-$enfantModalChoix1 = $("#enfantModalChoix1");
-$enfantModalChoix2 = $("#enfantModalChoix2");
-$spanEnfant = $("#spanEnfant");
+var enfant = document.getElementById('enfant');
+var enfantModal = document.getElementById('enfantModal');
+var reponseEnfant1= document.getElementById('reponseEnfant1');
+var reponseEnfant2 = document.getElementById('reponseEnfant2');
+var enfantModalChoix1 =document.getElementById('enfantModalChoix1');
+var enfantModalChoix2 = document.getElementById('enfantModalChoix2');
+var spanEnfant = document.getElementById('spanEnfant');
 
 //Enfant display modal
 enfant.onclick = function(){
@@ -116,13 +116,13 @@ spanEnfant.onclick = function () {
 //////////////////////////////////////// Napoléon ////////////////////////////////////////////////
 
 //variable Napoléon
-$napoleon = $("#napoleon");
-$napoleonModal = $("#napoleonModal");
-$reponseNapoleon1 = $("#reponseNapoleon1");
-$reponseNapoleon2 = $("#reponseNapoleon2");
-$napoleonModalChoix1 = $("#napoleonModalChoix1");
-$napoleonModalChoix2 = $("#napoleonModalChoix2");
-$spanNapoleon = $("#spanNapoleon");
+var napoleon =document.getElementById('napoleon');
+var napoleonModal = document.getElementById('napoleonModal');
+var reponseNapoleon1 = document.getElementById('reponseNapoleon1');
+var reponseNapoleon2 = document.getElementById('reponseNapoleon2');
+var napoleonModalChoix1 = document.getElementById('napoleonModalChoix1');
+var napoleonModalChoix2 = document.getElementById('napoleonModalChoix2');
+var spanNapoleon = document.getElementById('spanNapoleon');
 
 //Napoléon display modal
 napoleon.onclick = function(){
@@ -179,11 +179,265 @@ spanNapoleon.onclick = function () {
 
 
 
+//////////////////////////////////////// Proudhon ////////////////////////////////////////////////
+
+//variable Proudhon
+var proudhon =document.getElementById('prudhon');
+var proudhonModal = document.getElementById('proudhonModal');
+var reponseProudhon1 = document.getElementById('reponseProudhon1');
+var reponseProudhon2 = document.getElementById('reponseProudhon2');
+var proudhonModalChoix1 = document.getElementById('proudhonModalChoix1');
+var proudhonModalChoix2 = document.getElementById('proudhonModalChoix2');
+var spanProudhon = document.getElementById('spanProudhon');
+
+//Proudhon display modal
+proudhon.onclick = function(){
+    proudhonModal.style.display = "block";
+
+    setTimeout( function(){
+        proudhonModalChoix1.style.display = "block";
+        proudhonModalChoix2.style.display = "block";
+    } , 8000);
+
+};
+
+//Réponse 1 est cliquer
+reponseProudhon1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    proudhonModal.style.display = "none";
+    proudhonModalChoix1.style.display = "none";
+    proudhonModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Proudhon_F1.jpg";
+    } , 1000);
+
+};
+
+//Réponse 2 est cliqué
+reponseProudhon2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    proudhonModal.style.display = "none";
+    proudhonModalChoix1.style.display = "none";
+    proudhonModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Proudhon_F2.jpg";
+    } , 1000);
+
+};
+
+//Tout fermer
+spanProudhon.onclick = function () {
+    proudhonModal.style.display = "none";
+    proudhonModalChoix1.style.display = "none";
+    proudhonModalChoix2.style.display = "none";
+};
+
+//////////////////////////////////////// Fin Proudhon ////////////////////////////////////////////////
+
+//////////////////////////////////////// Baudelaire ////////////////////////////////////////////////
+
+//variable Baudelaire
+var baudelaire =document.getElementById('baudelaire');
+var baudelaireModal = document.getElementById('baudelaireModal');
+var reponseBaudelaire1 = document.getElementById('reponseBaudelaire1');
+var reponseBaudelaire2 = document.getElementById('reponseBaudelaire2');
+var baudelaireModalChoix1 = document.getElementById('baudelaireModalChoix1');
+var baudelaireModalChoix2 = document.getElementById('baudelaireModalChoix2');
+var spanBaudelaire = document.getElementById('spanBaudelaire');
+
+//baudelaire display modal
+baudelaire.onclick = function(){
+    baudelaireModal.style.display = "block";
+
+    setTimeout( function(){
+        baudelaireModalChoix1.style.display = "block";
+        baudelaireModalChoix2.style.display = "block";
+    } , 8000);
+
+};
+
+//Réponse 1 est cliquer
+reponseBaudelaire1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    baudelaireModal.style.display = "none";
+    baudelaireModalChoix1.style.display = "none";
+    baudelaireModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Baudelaire_F1.jpg";
+    } , 1000);
+
+};
+
+//Réponse 2 est cliqué
+reponseBaudelaire2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    baudelaireModal.style.display = "none";
+    baudelaireModalChoix1.style.display = "none";
+    baudelaireModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Baudelaire_F2.jpg";
+    } , 1000);
+
+};
+
+//Tout fermer
+spanBaudelaire.onclick = function () {
+    baudelaireModal.style.display = "none";
+    baudelaireModalChoix1.style.display = "none";
+    baudelaireModalChoix2.style.display = "none";
+};
+
+//////////////////////////////////////// Fin Baudelaire ////////////////////////////////////////////////
+
+//////////////////////////////////////// Irlandaise ////////////////////////////////////////////////
+
+//variable Irlandaise
+var irlandaise =document.getElementById('irlandaise');
+var irlandaiseModal = document.getElementById('irlandaiseModal');
+var reponseIrlandaise1 = document.getElementById('reponseIrlandaise1');
+var reponseIrlandaise2 = document.getElementById('reponseIrlandaise2');
+var irlandaiseModalChoix1 = document.getElementById('irlandaiseModalChoix1');
+var irlandaiseModalChoix2 = document.getElementById('irlandaiseModalChoix2');
+var spanIrlandaise = document.getElementById('spanIrlandaise');
+
+//Irlandaise display modal
+irlandaise.onclick = function(){
+    irlandaiseModal.style.display = "block";
+
+    setTimeout( function(){
+        irlandaiseModalChoix1.style.display = "block";
+        irlandaiseModalChoix2.style.display = "block";
+    } , 8000);
+
+};
+
+//Réponse 1 est cliquer
+reponseIrlandaise1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    irlandaiseModal.style.display = "none";
+    irlandaiseModalChoix1.style.display = "none";
+    irlandaiseModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Irlandaise_F1.jpg";
+    } , 1000);
+
+};
+
+//Réponse 2 est cliqué
+reponseIrlandaise2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    irlandaiseModal.style.display = "none";
+    irlandaiseModalChoix1.style.display = "none";
+    irlandaiseModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Irlandaise_F2.jpg";
+    } , 1000);
+
+};
+
+//Tout fermer
+spanIrlandaise.onclick = function () {
+    irlandaiseModal.style.display = "none";
+    irlandaiseModalChoix1.style.display = "none";
+    irlandaiseModalChoix2.style.display = "none";
+};
+
+//////////////////////////////////////// Fin Irlandaise ////////////////////////////////////////////////
+
+//////////////////////////////////////// Juliette ////////////////////////////////////////////////
+
+//variable Juliette
+var juliette =document.getElementById('juliette');
+var julietteModal = document.getElementById('julietteModal');
+var reponseJuliette1 = document.getElementById('reponseJuliette1');
+var reponseJuliette2 = document.getElementById('reponseJuliette2');
+var julietteModalChoix1 = document.getElementById('julietteModalChoix1');
+var julietteModalChoix2 = document.getElementById('julietteModalChoix2');
+var spanJuliette = document.getElementById('spanJuliette');
+
+//Juliette display modal
+juliette.onclick = function(){
+    julietteModal.style.display = "block";
+
+    setTimeout( function(){
+        julietteModalChoix1.style.display = "block";
+        julietteModalChoix2.style.display = "block";
+    } , 8000);
+
+};
+
+//Réponse 1 est cliquer
+reponseJuliette1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    julietteModal.style.display = "none";
+    julietteModalChoix1.style.display = "none";
+    julietteModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Juliette_F1.jpg";
+    } , 1000);
+
+};
+
+//Réponse 2 est cliqué
+reponseJuliette2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    julietteModal.style.display = "none";
+    julietteModalChoix1.style.display = "none";
+    julietteModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Juliette_F2.jpg";
+    } , 1000);
+
+};
+
+//Tout fermer
+spanJuliette.onclick = function () {
+    julietteModal.style.display = "none";
+    julietteModalChoix1.style.display = "none";
+    julietteModalChoix2.style.display = "none";
+};
+
+//////////////////////////////////////// Fin Juliette ////////////////////////////////////////////////
+
+
+
 //IMG
 var atelier = document.getElementById('atelier');
 
 
-
+/*
 
 
 var prudhonModal = document.getElementById('prudhonModal');
@@ -369,7 +623,7 @@ prudhonBtn2.onclick = function(){
                 fillColor: 'ff0000',
                 fillOpacity: 0.3
             });
-        document.getElementsByTagName("img").item(0).src="img/Proudhon_F1.jpg";
+        document.getElementsByTagName("img").item(0).src="img/baudelaire_F1.jpg";
     }else if(document.getElementById("chk9").checked){
         $("#atelier").mapster(
             {

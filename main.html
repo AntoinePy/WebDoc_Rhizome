@@ -1,239 +1,339 @@
 <!DOCTYPE html>
+<!-- DEBUT DE PAGE -->
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>La réponse est dans le tableau webdoc</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="assets/animate.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="main.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src ="assets/jquery.fittext.js"></script>
-    <script src ="assets/jquery.lettering.js"></script>
-    <script src="jquery.textillate.js"></script>
+    <!-- Head -->
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fin Meta -->
+
+        <!-- Title -->
+        <title>La réponse est dans le tableau webdoc</title>
+        <!-- Fin title -->
+
+        <!-- Link -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/solid.css" integrity="sha384-wnAC7ln+XN0UKdcPvJvtqIH3jOjs9pnKnq9qX68ImXvOGz2JuFoEiCjT8jyZQX2z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="assets/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- Fin Link -->
+
+        <!-- Script -->
+        <script src="main.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src ="assets/jquery.fittext.js"></script>
+        <script src ="assets/jquery.lettering.js"></script>
+        <script src="jquery.textillate.js"></script>
+        <!-- Fin Script -->
+
+    </head>
+    <!-- Fin Head -->
+
+    <!-- Body -->
+    <body>
+
+        <!-- Audio -->
+        <audio  id="guitare" src="audio/jeuxinterdits-v2.wav"></audio>
+        <audio id="chien" src="audio/chien.mp3"></audio>
+        <audio id="chat" src="audio/chat.mp3"></audio>
+        <!-- Fin Audio -->
+
+        <!-- Image de l'atelier + Map -->
+        <div>
+            <img id="atelier" src="img/atelier.jpg" usemap="#image-map">
+            <map name="image-map">
+                <area id="woman"   target="" alt="femme" title="femme" href="#dialog" coords="1151,1158,1135,1136,1126,1122,1126,1105,1113,1105,1099,1105,1085,1105,1082,1087,1094,1080,1099,1067,1101,1053,1110,1041,1119,1030,1124,1018,1129,1009,1136,1004,1133,990,1124,972,1126,954,1126,935,1124,905,1126,915,1126,891,1124,875,1126,857,1126,839,1129,818,1135,802,1135,774,1136,760,1138,740,1135,719,1140,728,1129,703,1135,689,1142,673,1152,663,1159,657,1142,650,1151,650,1131,647,1122,632,1117,613,1124,604,1135,602,1147,602,1160,602,1172,596,1186,599,1196,606,1191,617,1184,624,1184,632,1193,636,1200,643,1207,645,1216,647,1225,652,1232,664,1234,673,1235,689,1228,730,1225,746,1216,756,1214,767,1230,781,1235,792,1234,800,1237,818,1230,838,1223,860,1211,891,1207,907,1206,923,1209,939,1213,954,1218,972,1228,984,1239,984,1251,983,1260,988,1272,1000,1279,1004,1299,1004,1310,1006,1354,1041,1350,1044,1354,1053,1352,1067,1364,1071,1377,1077,1387,1088,1393,1099,1398,1109,1402,1127,1386,1137,1363,1138,1336,1145,1308,1152,1280,1145,1257,1153,1225,1162,1209,1157,1193,1137" shape="poly">
+                <area id="prudhon" target=""  alt="Prudhon" title="Prudhon" href="#" coords="1389,620,1400,616,1398,599,1398,586,1409,586,1418,588,1421,604,1425,616,1432,624,1435,634,1439,648,1439,662,1439,673,1439,684,1440,700,1440,710,1439,724,1439,756,1437,774,1435,791,1418,797,1418,769,1418,746,1407,756,1407,770,1400,786,1395,797,1393,770,1398,740,1395,708,1393,671,1391,652,1386,629" shape="poly">
+                <area id="baudelaire" target="" alt="baudelaire" title="baudelaire" href="#" coords="1997,883,1969,900,1940,902,1933,915,1930,893,1948,877,1956,860,1956,840,1925,883,1909,897,1889,900,1859,900,1850,879,1845,858,1842,842,1865,837,1889,833,1875,823,1856,814,1836,810,1819,810,1803,808,1812,796,1824,789,1834,782,1843,778,1852,773,1863,766,1872,750,1880,734,1891,727,1891,720,1880,708,1866,688,1866,671,1872,651,1882,642,1905,640,1914,653,1919,663,1930,672,1937,679,1946,688,1965,694,1978,702,1988,713,1997,720" shape="poly">
+
+                <area id="enfant" target="" alt="Enfant" title="Enfant" href="#" coords="870,1082,879,1082,889,1084,895,1091,887,1103,875,1110,861,1112,845,1112,843,1100,826,1089,826,1073,826,1052,826,1040,826,1022,822,1006,819,990,820,974,822,955,822,935,817,912,813,891,822,880,817,866,810,854,813,838,817,826,826,819,838,819,849,817,859,822,863,831,868,845,873,857,865,873,879,877,886,884,891,889,895,902,898,914,902,923,905,937,902,949,905,965,896,976,886,962,884,981,884,995,886,1008,884,1029,882,1043,882,1066" shape="poly">
+                <area id="napoleon" target="" alt="" title="Napoleon" href="#" coords="271,1117,260,1122,239,1121,225,1120,213,1109,200,1102,188,1095,193,1074,200,1063,207,1056,220,1045,234,1033,243,1026,257,1015,276,1003,287,994,273,985,260,982,244,976,236,1003,228,1015,225,998,216,973,204,976,195,992,188,1005,168,1001,153,996,138,991,131,968,142,952,138,932,144,895,153,874,154,849,167,838,151,826,144,803,147,791,154,777,165,778,177,769,184,752,204,739,223,736,236,736,248,738,248,718,253,709,264,708,273,706,281,709,292,716,301,722,310,729,320,738,324,751,320,761,317,765,304,769,292,771,285,778,290,785,292,798,292,819,281,831,280,846,274,860,276,877,285,881,296,884,308,892,308,900,313,911,320,923,329,923,334,930,345,939,352,943,356,953,357,972,352,989,356,1005,357,1021,361,1033,363,1044,366,1061,373,1079,389,1082,403,1090,416,1097,412,1107,395,1113,382,1107,363,1105,345,1109,336,1097,338,1079,327,1056,322,1029,308,1029,292,1044,266,1056,243,1074,239,1090,251,1104" shape="poly">
+                <area id="cane" target="" alt="chien" title="chien" href="#" coords="393,1033,380,1033,373,1017,365,998,386,1014,380,998,379,980,393,980,398,968,398,957,407,945,418,939,430,936,439,924,421,918,398,913,377,918,363,929,345,931,349,947,349,961,347,975,354,984,352,996,357,1016,365,1028,331,920,340,913,336,897,329,881,319,867,308,869,308,879,310,895,313,911,329,929" shape="poly">
+                <area id="chitarra" target="" alt="guitare" title="guitare" href="#" coords="612,1143,628,1146,631,1136,631,1123,619,1115,610,1106,594,1095,578,1084,559,1081,543,1063,524,1058,515,1040,495,1033,481,1021,462,1010,451,1003,432,998,418,996,403,996,391,1008,398,1021,419,1021,437,1024,456,1030,472,1030,481,1037,481,1053,492,1077,506,1081,520,1076,531,1081,543,1083,559,1090,571,1095,589,1107,594,1123" shape="poly">
+
+                <area id="irlandaise" target="" alt="IrishWoman" title="IrishWoman" href="#" coords="755,1048,737,1046,720,1051,711,1053,693,1064,672,1064,649,1067,626,1073,612,1064,598,1051,575,1051,554,1051,552,1037,564,1036,575,1028,591,1020,591,1004,596,990,603,972,605,958,612,945,615,931,635,922,645,919,656,912,665,883,668,864,681,853,691,853,702,841,709,829,720,818,732,813,746,804,757,806,767,816,776,829,776,843,773,859,766,878,755,883,743,892,762,891,787,887,790,896,787,917,790,938,797,945,794,967,787,887,792,986,801,1000,810,1007,822,1014,826,1028,813,1023,797,1025,781,1028,776,1039,762,1041" shape="poly">
+                <area id="juliette" target="" alt="juliette" title="Juliette" href="#" coords="1529,732,1526,716,1526,700,1531,679,1533,670,1520,656,1519,644,1517,628,1529,621,1545,612,1545,601,1556,594,1572,596,1577,606,1575,622,1565,631,1570,651,1580,654,1598,654,1607,656,1584,665,1572,668,1577,682,1588,700,1582,691,1598,709,1605,721,1612,728,1603,739,1602,755,1595,771,1595,781,1598,795,1602,806,1593,818,1584,829,1577,843,1566,855,1550,855,1549,843,1548,813,1545,832,1547,790,1533,753,1540,766,1547,780,1552,801" shape="poly">
+                <area id="gato" target="" alt="chat" title="Chat" href="#" coords="898,1001,904,989,900,973,909,971,918,986,919,1000,921,1016,928,1023,937,1023,946,1017,957,1021,971,1030,983,1039,988,1046,1004,1063,995,1053,1011,1072,1024,1069,1029,1058,1045,1060,1047,1072,1038,1084,1038,1097,1027,1104,1008,1104,999,1107,1017,1120,995,1120,1004,1125,981,1114,960,1095,967,1100,949,1083,935,1079,946,1092,919,1086,912,1049,918,1067,904,1040,895,1030,895,1016" shape="poly">
+                <area id="eastereggs" target="" alt="eastereggs" title="eastereggs" href="#" coords="1127,421,33" shape="circle">
+            </map>
+        </div>
+        <!-- Fin de map -->
 
 
-</head>
-<body>
-    <audio  id="guitare" src="audio/jeuxinterdits-v2.wav"></audio>
-    <audio id="chien" src="audio/chien.mp3"></audio>
-    <audio id="chat" src="audio/chat.mp3"></audio>
-    <div>
-        <img id="atelier" src="img/atelier.jpg" usemap="#image-map">
-        <map name="image-map">
-            <area id="woman"   target="" alt="femme" title="femme" href="#dialog" coords="1151,1158,1135,1136,1126,1122,1126,1105,1113,1105,1099,1105,1085,1105,1082,1087,1094,1080,1099,1067,1101,1053,1110,1041,1119,1030,1124,1018,1129,1009,1136,1004,1133,990,1124,972,1126,954,1126,935,1124,905,1126,915,1126,891,1124,875,1126,857,1126,839,1129,818,1135,802,1135,774,1136,760,1138,740,1135,719,1140,728,1129,703,1135,689,1142,673,1152,663,1159,657,1142,650,1151,650,1131,647,1122,632,1117,613,1124,604,1135,602,1147,602,1160,602,1172,596,1186,599,1196,606,1191,617,1184,624,1184,632,1193,636,1200,643,1207,645,1216,647,1225,652,1232,664,1234,673,1235,689,1228,730,1225,746,1216,756,1214,767,1230,781,1235,792,1234,800,1237,818,1230,838,1223,860,1211,891,1207,907,1206,923,1209,939,1213,954,1218,972,1228,984,1239,984,1251,983,1260,988,1272,1000,1279,1004,1299,1004,1310,1006,1354,1041,1350,1044,1354,1053,1352,1067,1364,1071,1377,1077,1387,1088,1393,1099,1398,1109,1402,1127,1386,1137,1363,1138,1336,1145,1308,1152,1280,1145,1257,1153,1225,1162,1209,1157,1193,1137" shape="poly">
-            <area id="prudhon" target=""  alt="Prudhon" title="Prudhon" href="#" coords="1389,620,1400,616,1398,599,1398,586,1409,586,1418,588,1421,604,1425,616,1432,624,1435,634,1439,648,1439,662,1439,673,1439,684,1440,700,1440,710,1439,724,1439,756,1437,774,1435,791,1418,797,1418,769,1418,746,1407,756,1407,770,1400,786,1395,797,1393,770,1398,740,1395,708,1393,671,1391,652,1386,629" shape="poly">
-            <area id="baudelaire" target="" alt="baudelaire" title="baudelaire" href="#" coords="1997,883,1969,900,1940,902,1933,915,1930,893,1948,877,1956,860,1956,840,1925,883,1909,897,1889,900,1859,900,1850,879,1845,858,1842,842,1865,837,1889,833,1875,823,1856,814,1836,810,1819,810,1803,808,1812,796,1824,789,1834,782,1843,778,1852,773,1863,766,1872,750,1880,734,1891,727,1891,720,1880,708,1866,688,1866,671,1872,651,1882,642,1905,640,1914,653,1919,663,1930,672,1937,679,1946,688,1965,694,1978,702,1988,713,1997,720" shape="poly">
+    <!-- Dialogue enfant - Courbet -->
 
-            <area id="enfant" target="" alt="Enfant" title="Enfant" href="#" coords="870,1082,879,1082,889,1084,895,1091,887,1103,875,1110,861,1112,845,1112,843,1100,826,1089,826,1073,826,1052,826,1040,826,1022,822,1006,819,990,820,974,822,955,822,935,817,912,813,891,822,880,817,866,810,854,813,838,817,826,826,819,838,819,849,817,859,822,863,831,868,845,873,857,865,873,879,877,886,884,891,889,895,902,898,914,902,923,905,937,902,949,905,965,896,976,886,962,884,981,884,995,886,1008,884,1029,882,1043,882,1066" shape="poly">
-            <area id="napoleon" target="" alt="" title="Napoleon" href="#" coords="271,1117,260,1122,239,1121,225,1120,213,1109,200,1102,188,1095,193,1074,200,1063,207,1056,220,1045,234,1033,243,1026,257,1015,276,1003,287,994,273,985,260,982,244,976,236,1003,228,1015,225,998,216,973,204,976,195,992,188,1005,168,1001,153,996,138,991,131,968,142,952,138,932,144,895,153,874,154,849,167,838,151,826,144,803,147,791,154,777,165,778,177,769,184,752,204,739,223,736,236,736,248,738,248,718,253,709,264,708,273,706,281,709,292,716,301,722,310,729,320,738,324,751,320,761,317,765,304,769,292,771,285,778,290,785,292,798,292,819,281,831,280,846,274,860,276,877,285,881,296,884,308,892,308,900,313,911,320,923,329,923,334,930,345,939,352,943,356,953,357,972,352,989,356,1005,357,1021,361,1033,363,1044,366,1061,373,1079,389,1082,403,1090,416,1097,412,1107,395,1113,382,1107,363,1105,345,1109,336,1097,338,1079,327,1056,322,1029,308,1029,292,1044,266,1056,243,1074,239,1090,251,1104" shape="poly">
-            <area id="cane" target="" alt="chien" title="chien" href="#" coords="393,1033,380,1033,373,1017,365,998,386,1014,380,998,379,980,393,980,398,968,398,957,407,945,418,939,430,936,439,924,421,918,398,913,377,918,363,929,345,931,349,947,349,961,347,975,354,984,352,996,357,1016,365,1028,331,920,340,913,336,897,329,881,319,867,308,869,308,879,310,895,313,911,329,929" shape="poly">
-            <area id="chitarra" target="" alt="guitare" title="guitare" href="#" coords="612,1143,628,1146,631,1136,631,1123,619,1115,610,1106,594,1095,578,1084,559,1081,543,1063,524,1058,515,1040,495,1033,481,1021,462,1010,451,1003,432,998,418,996,403,996,391,1008,398,1021,419,1021,437,1024,456,1030,472,1030,481,1037,481,1053,492,1077,506,1081,520,1076,531,1081,543,1083,559,1090,571,1095,589,1107,594,1123" shape="poly">
+        <!-- Courbet -->
+        <div id="enfantModal" class="modal">
+            <div class="text-content">
+                <span id="spanEnfant" class="close">&times;</span>
+                <p class="content-text">
+                    <b>Courbet :</b><span class="text"> Émile, fais bien attention comment un peintre prodigieux laisse glisser le pinceau sur son oeuvre. Quand tu auras maîtrisé la technique, tu pourras porter mon nom !</span>
+                </p>
+            </div>
+        </div>
+        <!-- Fin Courbet -->
 
-            <area id="irlandaise" target="" alt="IrishWoman" title="IrishWoman" href="#" coords="755,1048,737,1046,720,1051,711,1053,693,1064,672,1064,649,1067,626,1073,612,1064,598,1051,575,1051,554,1051,552,1037,564,1036,575,1028,591,1020,591,1004,596,990,603,972,605,958,612,945,615,931,635,922,645,919,656,912,665,883,668,864,681,853,691,853,702,841,709,829,720,818,732,813,746,804,757,806,767,816,776,829,776,843,773,859,766,878,755,883,743,892,762,891,787,887,790,896,787,917,790,938,797,945,794,967,787,887,792,986,801,1000,810,1007,822,1014,826,1028,813,1023,797,1025,781,1028,776,1039,762,1041" shape="poly">
-            <area id="juliette" target="" alt="juliette" title="Juliette" href="#" coords="1529,732,1526,716,1526,700,1531,679,1533,670,1520,656,1519,644,1517,628,1529,621,1545,612,1545,601,1556,594,1572,596,1577,606,1575,622,1565,631,1570,651,1580,654,1598,654,1607,656,1584,665,1572,668,1577,682,1588,700,1582,691,1598,709,1605,721,1612,728,1603,739,1602,755,1595,771,1595,781,1598,795,1602,806,1593,818,1584,829,1577,843,1566,855,1550,855,1549,843,1548,813,1545,832,1547,790,1533,753,1540,766,1547,780,1552,801" shape="poly">
-            <area id="gato" target="" alt="chat" title="Chat" href="#" coords="898,1001,904,989,900,973,909,971,918,986,919,1000,921,1016,928,1023,937,1023,946,1017,957,1021,971,1030,983,1039,988,1046,1004,1063,995,1053,1011,1072,1024,1069,1029,1058,1045,1060,1047,1072,1038,1084,1038,1097,1027,1104,1008,1104,999,1107,1017,1120,995,1120,1004,1125,981,1114,960,1095,967,1100,949,1083,935,1079,946,1092,919,1086,912,1049,918,1067,904,1040,895,1030,895,1016" shape="poly">
-            <area id="eastereggs" target="" alt="eastereggs" title="eastereggs" href="#" coords="1127,421,33" shape="circle">
-        </map>
+        <!-- Réponse Emile 1-->
+        <div id="enfantModalChoix1" class="modal">
+                <div id="reponseEnfant1"  class="text-reponse">
+                    <div>
+                        <p class="reponse content-reponse">
+                            <span class="text"> Je ne veux pas être peintre ! je préfère garder le nom de ma mère.</span>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <!-- Fin Réponse 1 -->
 
-    </div>
-
-
-
-<!-- Dialogue enfant - Courbet -->
-
-    <!-- Courbet -->
-    <div id="enfantModal" class="modal">
-        <div class="text-content">
-            <span id="spanEnfant" class="close">&times;</span>
-            <p class="content-text">
-                <b>Courbet :</b><span class="text"> Émile, fais bien attention comment un peintre prodigieux laisse glisser le pinceau sur son oeuvre. Quand tu auras maîtrisé la technique, tu pourras porter mon nom !</span>
-            </p>
-        </div>        
-    </div>
-    <!-- Fin Courbet -->
-
-    <!-- Réponse Emile 1-->
-    <div id="enfantModalChoix1" class="modal">
-            <div id="reponseEnfant1"  class="text-reponse">
+        <!-- Réponse Emile 2 -->
+        <div id="enfantModalChoix2" class="modal">
+            <div id="reponseEnfant2" class="text-reponse">
                 <div>
                     <p class="reponse content-reponse">
-                        <span class="text"> Je ne veux pas être peintre ! je préfère garder le nom de ma mère.</span>
+                        <span class="text">D'accord papa, tu ne seras pas déçu !</span>
                     </p>
                 </div>
-            </div>        
-    </div>
-    <!-- Fin Réponse 1 -->
-
-    <!-- Réponse Emile 2 -->
-    <div id="enfantModalChoix2" class="modal">
-        <div id="reponseEnfant2" class="text-reponse">
-            <div>
-                <p class="reponse content-reponse">
-                    <span class="text">D'accord papa, tu ne seras pas déçu !</span>
-                </p>
             </div>
         </div>
-    </div>
-    <!-- Fin Réponse 2 -->
+        <!-- Fin Réponse 2 -->
 
-<!-- Fin dialogue Emile -Courbet -->
+    <!-- Fin dialogue Emile -Courbet -->
 
 
-<!-- Dialogue Napoléon III - Courbet -->
+    <!-- Dialogue Napoléon III - Courbet -->
 
-    <!-- Courbet - Napoléon -->
-    <div id="napoleonModal" class="modal">
-        <div class="text-content">
-                <span id="spanNapoleon" class="close">&times;</span>
+        <!-- Courbet - Napoléon -->
+        <div id="napoleonModal" class="modal">
+            <div class="text-content">
+                    <span id="spanNapoleon" class="close">&times;</span>
+                    <p class="content-text">
+                        <b>Courbet : </b><span class="text"> Je vous hais Napoléon III ! Je ne tolère pas d'être censuré !</span>
+                        <br>
+                        <b>Napoléon : </b><span class="text"> Et moi je n’ai pas envie d'apparaître dans vos vulgaires tableaux, déguisé en braconnier, quelle honte !</span>
+                        <br>
+                        <b>Courbet : </b><span class="text"> Vous ne méritez même pas de figurer dans une de mes oeuvres.</span>
+                    </p>
+
+            </div>
+        </div>
+        <!-- Fin Courbet - Napoléon -->
+
+        <!-- Réponse Napoléon 1-->
+        <div id="napoleonModalChoix1" class="modal">
+            <div id="reponseNapoleon1"  class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Mon visage n'a rien à faire dans votre peinture !</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 1 -->
+
+        <!-- Réponse Napoléon 2 -->
+        <div id="napoleonModalChoix2" class="modal">
+            <div id="reponseNapoleon2" class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Vous ne vous en sortirez pas comme ça !</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 2 -->
+
+    <!-- Fin dialogue Napoléon III - Courbet -->
+
+
+    <!-- Dialogue Proudhon - Courbet -->
+
+        <!-- Courbet - Proudhon -->
+        <div id="proudhonModal" class="modal">
+            <div class="text-content">
+                <span id="spanProudhon" class="close">&times;</span>
                 <p class="content-text">
-                    <b>Courbet : </b><span class="text"> Je vous hais Napoléon III ! Je ne tolère pas d'être censuré !</span>
+                    <b>Proudhon : </b><span class="text"> Mon ami Gustave, tu sais, la femme ne doit avoir aucune représentation politique, ça serait insupportable d'écouter le bavardage de l’ignorance !</span>
                     <br>
-                    <b>Napoléon : </b><span class="text"> Et moi je n’ai pas envie d'apparaître dans vos vulgaires tableaux, déguisé en braconnier, quelle honte !</span>
+                    <b>Courbet : </b><span class="text">Où veux-tu en venir cher ami ?</span>
                     <br>
-                    <b>Courbet : </b><span class="text"> Vous ne méritez même pas de figurer dans une de mes oeuvres.</span>
+                    <b>Proudhon : </b><span class="text">Je pense que tu ne devrais pas leurs octroyer de représentation picturale. Elles n’ont pas leur place dans tes tableaux.</span>
                 </p>
 
-        </div>        
-    </div>
-    <!-- Fin Courbet - Napoléon -->
-
-    <!-- Réponse Napoléon 1-->
-    <div id="napoleonModalChoix1" class="modal">
-        <div id="reponseNapoleon1"  class="text-reponse">
-            <div>
-                <p class="reponse content-reponse">
-                    <span class="text">Mon visage n'a rien à faire dans votre peinture !</span>
-                </p>
             </div>
         </div>
-    </div>
-    <!-- Fin Réponse 1 -->
+        <!-- Fin Courbet - Proudhon -->
 
-    <!-- Réponse Napoléon 2 -->
-    <div id="napoleonModalChoix2" class="modal">
-        <div id="reponseNapoleon2" class="text-reponse">
-            <div>
-                <p class="reponse content-reponse">
-                    <span class="text">Vous ne vous en sortirez pas comme ça !</span>
-                </p>
+        <!-- Réponse Proudhon 1-->
+        <div id="proudhonModalChoix1" class="modal">
+            <div id="reponseProudhon1"  class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Tu as bien raison Pierre-Joseph, bonne réflexion !</span>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Fin Réponse 2 -->
+        <!-- Fin Réponse 1 -->
 
-<!-- Fin dialogue Napoléon - Courbet -->
-
-
-
-
-
-
-
-
-
-           <div id="prudhonModal" class="modal">
-                <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p><b>Prudhon :</b> Mon ami Gustave, tu sais, la femme ne doit avoir aucune représentation politique, ça serait insupportable d'écouter le bavardage de l’ignorance ! </p>
-                        <p><b>Courbet :</b> Où veux-tu en venir cher ami ?</p>
-                        <button id="prudhonBtn">Valider</button>   
-                </div>        
+        <!-- Réponse Proudhon 2 -->
+        <div id="proudhonModalChoix2" class="modal">
+            <div id="reponseProudhon2" class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Je ne suis pas d’accord avec toi mon ami. Les femmes sont l’origine du monde !</span>
+                    </p>
+                </div>
             </div>
-            <div id="prudhonModal2" class="modal">
-                    <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p><b>Prudhon :</b> Je pense que tu ne devrais pas leurs octroyer de représentation picturale dans tes tableaux.</p>
-                            <div class="boxy open">
-                            <input id ="chk8" type="checkbox" class="radio" name="frep2[][]"><label for="chk8">Tu as bien raison Pierre-Joseph, bonne réflexion !</label>
-                            </div>
-                            <div class="boxy open" >
-                            <input id ="chk9" type="checkbox" class="radio" name="frep2[][]"><label for="chk9"></label>
-                            </div>
-                            <p>Je ne suis pas d’accord avec toi mon ami. Les femmes sont à l’origine de notre monde !</p>
-                            <button id="prudhonBtn2">Valider</button>
-                    </div>        
+        </div>
+        <!-- Fin Réponse 2 -->
+
+    <!-- Fin dialogue Proudhon - Courbet -->
+
+    <!-- Dialogue Baudelaire - Courbet -->
+
+        <!-- Courbet - Baudelaire -->
+        <div id="baudelaireModal" class="modal">
+            <div class="text-content">
+                <span id="spanBaudelaire" class="close">&times;</span>
+                <p class="content-text">
+                    <b>Courbet : </b><span class="text">J’ai effacé Jeanne de mon tableau, comme ça sa présence ne t’apportera plus de tourments.</span>
+                    <br>
+                    <b>Baudelaire : </b><span class="text">Mais Gustave.. cela n’est-il pas trop excessif ?! </span>
+                    <br>
+                    <b>Courbet : </b><span class="text">Enfin Charles ! à chaque fois que je te peins, tu n’est jamais satisfait !</span>
+                </p>
+
             </div>
-            <div id="baudelaireModal" class="modal">
-                        <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <p><b>Courbet :</b> Comment va cette mélancolie mon cher Charles ?</p>
-                                <p><b>Baudelaire :</b> Mon âme est desfois sombre desfois lumineuse. La femme est l'être qui projete la plus grande ombre ou la plus grande lumière dans nos rêves</p>
-                                <p><b>Courbet :</b> Oui mon ami je sais... C'est pourquoi j’ai effacé Jeanne de mon tableau, comme ça ta figure ne t’apportera plus de tourments</p>
-                                <p><b>Baudelaire :</b> Ma bien aimée Jeanne ? Mais Gustave, on est encore ensemble ! Comment as-tu osé me séparer de ma charmante demoiselle</p>
-                                <button id="baudelaireBtn">Valider</button>
-                        </div>        
-                    </div>
-                    <div id="baudelaireModal2" class="modal">
-                            <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <p><b>Courbet :</b> Ah Charles t’es impossible ! Je ne sais pas comment aboutir un portrait de toi, tous les jours tu changes !</p>
-                                    <div class="boxy open">
-                                    <input id ="chk10" type="checkbox" class="radio" name="frep2[][]"><label for="chk10"></label>
-                                    </div>
-                                    <p>Alors enlève moi ! Si ton insensible pinceau a arraché les couleurs de mon amour, qu’elle emporte aussi mes sombres couleurs !</p>
-                                    <div class="boxy open" >
-                                    <input id ="chk11" type="checkbox" class="radio" name="frep2[][]"><label for="chk11">Quelle horreur Gustave, remets là près de moi !</label>
-                                    </div>
-                                    <button id="baudelaireBtn2">Valider</button>   
-                            </div>        
-                    </div>
-                    <div id="irlandaiseModal" class="modal">
-                                <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p><b>Irlandaise :</b> Monsieur s’il vous plaît, donnez-moi un bout de pain pour me nourrir et pour pouvoir allaiter mon bébé, vous seriez un homme bon !</p>
-                                        <p><b> Courbet :</b> Oh malheureuse dame, faites-vous parti de la diaspora irlandaise à cause de la famine qui fait rage dans votre pays natal ?</p>
-                                        <button id="irlandaiseBtn">Valider</button>   
-                                </div>        
-                            </div>
-                        <div id="irlandaiseModal2" class="modal">
-                                    <div class="modal-content">
-                                            <span class="close">&times;</span>
-                                            <p><b>Irlandaise :</b> Oui c’est bien ça monsieur, malheureusement.. pourriez-vous m'aider ?</p>
-                                            <div class="boxy open">
-                                            <input id ="chk12" type="checkbox" class="radio" name="frep2[][]"><label for="chk12"></label>
-                                </div>
-                                <p>Pourquoi ferais-je ça ? La France aussi à été touché par le mildiou, notre peuple aussi est affamé. allez vous-en dans votre pays !</p>
-                                            <div class="boxy open" >
-                                            <input id ="chk13" type="checkbox" class="radio" name="frep2[][]"><label for="chk13"></label>
-                                            </div>
-                                            <p>L'Angleterre n’a donc aucune honte envers l’Irlande ! Venez madame, la France vous accueille à bras ouvert.</p>
-                                            <button id="irlandaiseBtn2">Valider</button>   
-                                    </div>        
-                            </div>
-                            <div id="julietteModal" class="modal">
-                                <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p><b>Courbet :</b> Ma soeur cadette, ma préférée : Juliette</p>
-                                        <p><b>Juliette :</b> Oh Gustave, il me semble que je suis tombé amoureuse... Mon bien aimé voudrait te demander ma main !</p>
-                                        <button id="julietteBtn">Valider</button>   
-                                </div>
-                            </div>
-                        <div id="julietteModal2" class="modal">
-                                    <div class="modal-content">
-                                            <span class="close">&times;</span>
-                                            <p><b>Courbet :</b> Il est chanceux d’avoir conquis une femme comme toi. Mais pourquoi êtes vous pressés ? Laisse moi te peindre une dernière fois en tant que mademoiselle !</p>
-                                            <div class="boxy open">
-                                            <input id ="chk14" type="checkbox" class="radio" name="frep2[][]"><label for="chk14">D’accord mon frère fais-toi plaisir.</label>
-                                </div>
-                                            <div class="boxy open">
-                                              <input id ="chk15" type="checkbox" class="radio" name="frep2[][]"><label for="chk15">Non, il nous faut nous marier tout de suite, parce que...</label>
-                                            </div>
-                                            <button id="julietteBtn2">Valider</button>   
-                                    </div>
-                            </div>
-    
-     
-<script src="js/jquery.rwdImageMaps.min.js"></script>
-<script src="js/jquery.imagemapster.min.js"></script>
-<script>
-</script>   
-<script src="main.js"></script>
-</body>
+        </div>
+        <!-- Fin Courbet - Baudelaire -->
+
+        <!-- Réponse Baudelaire 1-->
+        <div id="baudelaireModalChoix1" class="modal">
+            <div id="reponseBaudelaire1"  class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Alors enlève moi ! Si ton insensible pinceau a arraché les couleurs de mon amour, qu’elle emporte aussi mes sombres couleurs !</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 1 -->
+
+        <!-- Réponse Baudelaire 2 -->
+        <div id="baudelaireModalChoix2" class="modal">
+            <div id="reponseBaudelaire2" class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Quelle horreur Gustave, remets là près de moi !</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 2 -->
+
+    <!-- Fin dialogue Baudelaire - Courbet -->
+
+    <!-- Dialogue Irlandaise - Courbet -->
+
+        <!-- Courbet - Irlandaise -->
+        <div id="irlandaiseModal" class="modal">
+            <div class="text-content">
+                <span id="spanIrlandaise" class="close">&times;</span>
+                <p class="content-text">
+                    <b>Irlandaise : </b><span class="text">  Monsieur s’il vous plaît, donnez-moi un bout de pain pour me nourrir et pour pouvoir allaiter mon bébé, vous seriez un homme bon !</span>
+                    <br>
+                    <b>Courbet : </b><span class="text">Oh malheureuse dame, faites-vous parti de la diaspora irlandaise à cause de la famine qui fait rage dans votre pays natal ?</span>
+                    <br>
+                    <b>Irlandaise : </b><span class="text">Oui c’est bien ça monsieur, malheureusement.. pourriez-vous m'aider ?</span>
+                </p>
+
+            </div>
+        </div>
+        <!-- Fin Courbet - Irlandaise -->
+
+        <!-- Réponse Irlandaise 1-->
+        <div id="irlandaiseModalChoix1" class="modal">
+            <div id="reponseIrlandaise1"  class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Pourquoi ferais-je ça ? La France aussi à été touché par le mildiou, notre peuple aussi est affamé. allez vous-en dans votre pays !</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 1 -->
+
+        <!-- Réponse Irlandaise 2 -->
+        <div id="irlandaiseModalChoix2" class="modal">
+            <div id="reponseIrlandaise2" class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">L'Angleterre n’a donc aucune honte envers l’Irlande ! Venez madame, la France vous accueille à bras ouvert.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 2 -->
+
+    <!-- Fin dialogue Irlandaise - Courbet -->
+
+    <!-- Dialogue Juliette - Courbet -->
+
+        <!-- Courbet - Juliette -->
+        <div id="julietteModal" class="modal">
+            <div class="text-content">
+                <span id="spanJuliette" class="close">&times;</span>
+                <p class="content-text">
+                    <b>Courbet : </b><span class="text"> Ma soeur cadette, ma préférée :Juliette :)</span>
+                    <br>
+                    <b>Juliette : </b><span class="text">Oh Gustave, il me semble que je suis tombé amoureuse... Mon bien aimé voudrait te demander ma main !</span>
+                    <br>
+                    <b>Courbet : </b><span class="text">Il est chanceux d’avoir conquis une femme comme toi. Mais pourquoi êtes vous pressés ? Laisse moi te peindre une dernière fois en tant que mademoiselle !</span>
+                </p>
+
+            </div>
+        </div>
+        <!-- Fin Courbet - Juliette -->
+
+        <!-- Réponse Juliette 1-->
+        <div id="julietteModalChoix1" class="modal">
+            <div id="reponseJuliette1"  class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">A ta guise mon cher frère.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 1 -->
+
+        <!-- Réponse Juliette 2 -->
+        <div id="julietteModalChoix2" class="modal">
+            <div id="reponseJuliette2" class="text-reponse">
+                <div>
+                    <p class="reponse content-reponse">
+                        <span class="text">Non, il nous faut nous marier tout de suite, parce que...</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Réponse 2 -->
+
+    <!-- Fin dialogue Juliette - Courbet -->
+
+    <!-- Script -->
+    <script src="js/jquery.rwdImageMaps.min.js"></script>
+    <script src="js/jquery.imagemapster.min.js"></script>
+    <script src="main.js"></script>
+    <!-- Fin script -->
+
+    </body>
+    <!-- fin Body -->
+
 </html>
+<!-- FIN DE PAGE -->
