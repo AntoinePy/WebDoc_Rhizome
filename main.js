@@ -49,12 +49,15 @@ setTimeout( function() {
     document.getElementsByTagName( "input" )[3].click();
 }, 1000 );
 
+//////////////////////////////////////// Enfant ////////////////////////////////////////////////
 
 // variable enfant
 $enfant =  $("#enfant");
 $enfantModal = $("#enfantModal");
 $reponseEnfant1= $("#reponseEnfant1");
 $reponseEnfant2 = $("#reponseEnfant2");
+$enfantModalChoix1 = $("#enfantModalChoix1");
+$enfantModalChoix2 = $("#enfantModalChoix2");
 $spanEnfant = $("#spanEnfant");
 
 //Enfant display modal
@@ -66,6 +69,7 @@ enfant.onclick = function(){
     } , 8000);
 
 };
+
 //Réponse 1 est cliquer
 reponseEnfant1.onclick = function(){
     $("#atelier").mapster(
@@ -73,14 +77,15 @@ reponseEnfant1.onclick = function(){
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-    enfantModal.style.display = "none";
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
+    enfantModal.style.display = "none";
     setTimeout( function(){
         document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
     } , 1000);
 
 };
+
 //Réponse 2 est cliqué
 reponseEnfant2.onclick = function() {
     $("#atelier").mapster(
@@ -88,14 +93,15 @@ reponseEnfant2.onclick = function() {
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-    enfantModal.style.display = "none";
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
+    enfantModal.style.display = "none";
     setTimeout( function(){
         document.getElementsByTagName("img").item(0).src = "img/Emile_F2.jpg";
     } , 1000);
 
 };
+
 //Tout fermer
 spanEnfant.onclick = function () {
     enfantModalChoix1.style.display = "none";
@@ -104,13 +110,71 @@ spanEnfant.onclick = function () {
 };
 
 
+//////////////////////////////////////// Fin Enfant ////////////////////////////////////////////////
 
 
+//////////////////////////////////////// Napoléon ////////////////////////////////////////////////
 
+//variable Napoléon
+$napoleon = $("#napoleon");
+$napoleonModal = $("#napoleonModal");
+$reponseNapoleon1 = $("#reponseNapoleon1");
+$reponseNapoleon2 = $("#reponseNapoleon2");
+$napoleonModalChoix1 = $("#napoleonModalChoix1");
+$napoleonModalChoix2 = $("#napoleonModalChoix2");
+$spanNapoleon = $("#spanNapoleon");
 
+//Napoléon display modal
+napoleon.onclick = function(){
+    napoleonModal.style.display = "block";
 
+    setTimeout( function(){
+        napoleonModalChoix1.style.display = "block";
+        napoleonModalChoix2.style.display = "block";
+    } , 8000);
 
+};
 
+//Réponse 1 est cliquer
+reponseNapoleon1.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    napoleonModal.style.display = "none";
+    napoleonModalChoix1.style.display = "none";
+    napoleonModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src="img/Napoleon_F1.jpg";
+    } , 1000);
+
+};
+
+//Réponse 2 est cliqué
+reponseNapoleon2.onclick = function() {
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+    napoleonModal.style.display = "none";
+    napoleonModalChoix1.style.display = "none";
+    napoleonModalChoix2.style.display = "none";
+    setTimeout( function(){
+        document.getElementsByTagName("img").item(0).src = "img/Napoleon_F2.jpg";
+    } , 1000);
+
+};
+
+//Tout fermer
+spanNapoleon.onclick = function () {
+    napoleonModal.style.display = "none";
+    napoleonModalChoix1.style.display = "none";
+    napoleonModalChoix2.style.display = "none";
+};
+
+//////////////////////////////////////// Fin Napoléon ////////////////////////////////////////////////
 
 
 
@@ -120,8 +184,7 @@ var atelier = document.getElementById('atelier');
 
 
 
-var napoleonModal = document.getElementById('napoleonModal');
-var napoleonModal2 = document.getElementById('napoleonModal2');
+
 
 var prudhonModal = document.getElementById('prudhonModal');
 var prudhonModal2 = document.getElementById('prudhonModal2');
@@ -138,7 +201,7 @@ var julietteModal2 = document.getElementById('julietteModal2');
 //AREA
 
 var femme = document.getElementById('woman');
-var napoleon = document.getElementById('napoleon');
+
 var prudhon = document.getElementById('prudhon');
 var baudelaire = document.getElementById('baudelaire');
 var irlandaise = document.getElementById('irlandaise');
@@ -173,6 +236,7 @@ var spanIrlandaise2 = document.getElementsByClassName("close")[11];
 var spanJuliette1 = document.getElementsByClassName("close")[12];
 var spanJuliette2 = document.getElementsByClassName("close")[13];
 */
+/*
 femme.onclick = function(){
     for(var i=0; i<modalClass.length;i++){
         modalClass[i].style.display = 'none';
@@ -430,7 +494,7 @@ window.onclick = function(event){
     else if(event.target == julietteModal2){
         julietteModal2.style.display = "none";
     }
-}
+}*/
 $("input:checkbox").on('click', function() {
     var $box = $(this);
     if ($box.is(":checked")) {
