@@ -1,5 +1,6 @@
 var dialog1;
 var dialog2;
+var timer;
 var modalClass = document.getElementsByClassName('modal');
 var titre = document.getElementById("titre");
 var eastereggs = document.getElementById("eastereggs");
@@ -12,32 +13,33 @@ function stopSound(){
         sounds[i].currentTime = 0;
     }  
 }
+function closeModal(){
+    for(var j=0;j<modalClass.length;j++){
+        modalClass[j].style.display = "none";
+    } 
+}
+
 //AUDIO
 
 var audio = document.getElementById("guitare");
 var chienAudio = document.getElementById("chien");
 var chatAudio = document.getElementById("chat");
 var baudelaireAudio1 = document.getElementById("conversationBaudelaire1");
-var baudelaireAudio2 = document.getElementById("conversationBaudelaire2");
 var baudelaireAudio3 = document.getElementById("conversationBaudelaire3");
 var baudelaireAudio4 = document.getElementById("conversationBaudelaire4");
 var enfantAudio1 = document.getElementById("conversationEnfant1");
 var enfantAudio2 = document.getElementById("conversationEnfant2");
 var enfantAudio3 = document.getElementById("conversationEnfant3");
 var irlandaiseAudio1 = document.getElementById("conversationIrlandaise1");
-var irlandaiseAudio2 = document.getElementById("conversationIrlandaise2");
 var irlandaiseAudio3 = document.getElementById("conversationIrlandaise3");
 var irlandaiseAudio4 = document.getElementById("conversationIrlandaise4");
 var julietteAudio1 = document.getElementById("conversationJuliette1");
-var julietteAudio2 = document.getElementById("conversationJuliette2");
 var julietteAudio3 = document.getElementById("conversationJuliette3");
 var julietteAudio4 = document.getElementById("conversationJuliette4");
 var napoleonAudio1 = document.getElementById("conversationNapoleon1");
-var napoleonAudio2 = document.getElementById("conversationNapoleon2");
 var napoleonAudio3 = document.getElementById("conversationNapoleon3");
 var napoleonAudio4 = document.getElementById("conversationNapoleon4");
 var proudhonAudio1 = document.getElementById("conversationProudhon1");
-var proudhonAudio2 = document.getElementById("conversationProudhon2");
 var proudhonAudio3 = document.getElementById("conversationProudhon3");
 var proudhonAudio4 = document.getElementById("conversationProudhon4");
 //FIN AUDIO
@@ -98,12 +100,6 @@ $("#atelier").mapster(
     fillOpacity: 0.3,
     singleSelect: true
 });
-setTimeout( function() {
-    document.getElementsByTagName( "input" )[0].click();
-    document.getElementsByTagName( "input" )[1].click();
-    document.getElementsByTagName( "input" )[2].click();
-    document.getElementsByTagName( "input" )[3].click();
-}, 1000 );
 //////////////////////////////////////// Welcome ////////////////////////////////////////////////
 var welcomeModal = document.getElementById('welcomeModal');
 var spanWelcome = document.getElementById('spanWelcome');
@@ -130,10 +126,12 @@ var spanEnfant = document.getElementById('spanEnfant');
 
 //Enfant display modal
 enfant.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     enfantModal.style.display = "block";
     enfantAudio1.play();
-    setTimeout( function(){
+    timer = setTimeout( function(){
         enfantModalChoix1.style.display = "block";
         enfantModalChoix2.style.display = "block";
     } , 8000);
@@ -208,13 +206,12 @@ var spanNapoleon = document.getElementById('spanNapoleon');
 
 //Napoléon display modal
 napoleon.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     napoleonModal.style.display = "block";
     napoleonAudio1.play();
-    setTimeout(function(){
-        napoleonAudio2.play();
-    }, 9000);
-    setTimeout( function(){
+    timer = setTimeout( function(){
         napoleonModalChoix1.style.display = "block";
         napoleonModalChoix2.style.display = "block";
     } , 8000);
@@ -290,13 +287,12 @@ var spanProudhon = document.getElementById('spanProudhon');
 
 //Proudhon display modal
 proudhon.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     proudhonModal.style.display = "block";
     proudhonAudio1.play();
-    setTimeout(function(){
-        proudhonAudio2.play();
-    }, 10500);
-    setTimeout( function(){
+    timer = setTimeout( function(){
         proudhonModalChoix1.style.display = "block";
         proudhonModalChoix2.style.display = "block";
     } , 8000);
@@ -366,16 +362,14 @@ var reponseBaudelaire2 = document.getElementById('reponseBaudelaire2');
 var baudelaireModalChoix1 = document.getElementById('baudelaireModalChoix1');
 var baudelaireModalChoix2 = document.getElementById('baudelaireModalChoix2');
 var spanBaudelaire = document.getElementById('spanBaudelaire');
-
 //baudelaire display modal
 baudelaire.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     baudelaireModal.style.display = "block";
     baudelaireAudio1.play();
-    setTimeout(function(){
-        baudelaireAudio2.play();
-    }, 9000);
-    setTimeout( function(){
+    timer = setTimeout( function(){
         baudelaireModalChoix1.style.display = "block";
         baudelaireModalChoix2.style.display = "block";
     } , 8000);
@@ -448,13 +442,12 @@ var spanIrlandaise = document.getElementById('spanIrlandaise');
 
 //Irlandaise display modal
 irlandaise.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     irlandaiseModal.style.display = "block";
     irlandaiseAudio1.play();
-    setTimeout(function(){
-        irlandaiseAudio2.play();
-    }, 18000);
-    setTimeout( function(){
+    timer = setTimeout( function(){
         irlandaiseModalChoix1.style.display = "block";
         irlandaiseModalChoix2.style.display = "block";
     } , 8000);
@@ -527,13 +520,12 @@ var spanJuliette = document.getElementById('spanJuliette');
 
 //Juliette display modal
 juliette.onclick = function(){
+    clearTimeout(timer);
     stopSound();
+    closeModal();
     julietteModal.style.display = "block";
     julietteAudio1.play();
-    setTimeout(function(){
-        julietteAudio2.play();
-    }, 10000);
-    setTimeout( function(){
+    timer = setTimeout( function(){
         julietteModalChoix1.style.display = "block";
         julietteModalChoix2.style.display = "block";
     } , 8000);
@@ -596,23 +588,6 @@ spanJuliette.onclick = function () {
 //IMG
 var atelier = document.getElementById('atelier');
 
-/*  window.onclick = function(event){
-
-    if(event.target == enfantModal){
-        stopSound();
-        enfantModal.style.display = "none";
-    }
-    else if(event.target == enfantModalChoix1){
-        stopSound();
-        enfantModalChoix1.style.display = "none";
-    }
-    else if(event.target == enfantModalChoix2){
-        stopSound();
-        enfantModalChoix2.style.display = "none";
-    }
-    
- } 
- */
 /*
 var prudhonModal = document.getElementById('prudhonModal');
 var prudhonModal2 = document.getElementById('prudhonModal2');
