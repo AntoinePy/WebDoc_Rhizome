@@ -548,7 +548,47 @@ spanJuliette.onclick = function () {
     julietteAudio4.pause();
     julietteAudio4.currentTime = 0;
 };
+/* window.onclick = function(event){
 
+    if(event.target == enfantModal){
+        enfantModal.style.display = "none";
+    }
+    else if(event.target == enfantModalChoix1){
+        enfantModalChoix1.style.display = "none";
+    }
+    else if(event.target == enfantModalChoix2){
+        enfantModalChoix2.style.display = "none";
+    }
+    else if(event.target == napoleonModal){
+        napoleonModal.style.display = "none";
+    }
+    else if(event.target == napoleonModal2){
+        napoleonModal2.style.display = "none";
+    }
+    else if(event.target == prudhonModal){
+        prudhonModal.style.display = "none";
+    }
+    else if(event.target == prudhonModal2){
+        prudhonModal2.style.display = "none";
+    }
+    else if(event.target == baudelaireModal){
+        baudelaireModal.style.display = "none";
+    }
+    else if(event.target == baudelaireModal2){
+        baudelaireModal2.style.display = "none";
+    }
+    else if(event.target == irlandaiseModal){
+        irlandaiseModal.style.display = "none";
+    }
+    else if(event.target == irlandaiseModal2){
+        irlandaiseModal2.style.display = "none";
+    }
+    else if(event.target == julietteModal){
+        julietteModal.style.display = "none";
+    }
+    else if(event.target == julietteModal2){
+        julietteModal2.style.display = "none";
+    } */
 //////////////////////////////////////// Fin Juliette ////////////////////////////////////////////////
 
 
