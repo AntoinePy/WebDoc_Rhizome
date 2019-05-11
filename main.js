@@ -4,6 +4,14 @@ var modalClass = document.getElementsByClassName('modal');
 var titre = document.getElementById("titre");
 var eastereggs = document.getElementById("eastereggs");
 var menu = document.getElementById("menu");
+var sounds = document.getElementsByTagName("audio");
+//Fonction pour arreter les sons
+function stopSound(){
+    for(i=0; i<sounds.length; i++){
+        sounds[i].pause();
+        sounds[i].currentTime = 0;
+    }  
+}
 //AUDIO
 
 var audio = document.getElementById("guitare");
@@ -33,13 +41,14 @@ var proudhonAudio2 = document.getElementById("conversationProudhon2");
 var proudhonAudio3 = document.getElementById("conversationProudhon3");
 var proudhonAudio4 = document.getElementById("conversationProudhon4");
 //FIN AUDIO
+
 menu.onclick = function(){
     $("#atelier").mapster(
         {
             fillColor: 'ff0000',
             fillOpacity: 0.3
         });
-        document.location.reload(true);
+    document.location.reload(true);
 }
 eastereggs.onclick = function(){
     $("#atelier").mapster(
@@ -53,6 +62,7 @@ $(function () {
     $('.text').textillate({ in: { effect: 'fadeIn' } });
 });
 $("#chitarra").click(function(){
+    stopSound();
     $("#atelier").mapster(
         {
             fillColor: 'ff0000',
@@ -62,6 +72,7 @@ $("#chitarra").click(function(){
     return false;
 });
 $("#cane").click(function(){
+    stopSound();
     $("#atelier").mapster(
         {
             fillColor: 'ff0000',
@@ -71,6 +82,7 @@ $("#cane").click(function(){
     return false;
 });
 $("#gato").click(function(){
+    stopSound();
     $("#atelier").mapster(
         {
             fillColor: 'ff0000',
@@ -106,6 +118,7 @@ var spanEnfant = document.getElementById('spanEnfant');
 
 //Enfant display modal
 enfant.onclick = function(){
+    stopSound();
     enfantModal.style.display = "block";
     enfantAudio1.play();
     setTimeout( function(){
@@ -117,6 +130,7 @@ enfant.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseEnfant1.onclick = function(){
+    stopSound();
     enfantAudio2.play();
     $("#atelier").mapster(
         {
@@ -134,6 +148,7 @@ reponseEnfant1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseEnfant2.onclick = function() {
+    stopSound();
     enfantAudio3.play();
     $("#atelier").mapster(
         {
@@ -181,6 +196,7 @@ var spanNapoleon = document.getElementById('spanNapoleon');
 
 //Napoléon display modal
 napoleon.onclick = function(){
+    stopSound();
     napoleonModal.style.display = "block";
     napoleonAudio1.play();
     setTimeout(function(){
@@ -195,6 +211,7 @@ napoleon.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseNapoleon1.onclick = function(){
+    stopSound();
     napoleonAudio3.play();
     $("#atelier").mapster(
         {
@@ -212,6 +229,7 @@ reponseNapoleon1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseNapoleon2.onclick = function() {
+    stopSound();
     napoleonAudio4.play();
     $("#atelier").mapster(
         {
@@ -260,6 +278,7 @@ var spanProudhon = document.getElementById('spanProudhon');
 
 //Proudhon display modal
 proudhon.onclick = function(){
+    stopSound();
     proudhonModal.style.display = "block";
     proudhonAudio1.play();
     setTimeout(function(){
@@ -274,6 +293,7 @@ proudhon.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseProudhon1.onclick = function(){
+    stopSound();
     proudhonAudio3.play();
     $("#atelier").mapster(
         {
@@ -291,6 +311,7 @@ reponseProudhon1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseProudhon2.onclick = function() {
+    stopSound();
     proudhonAudio4.play();
     $("#atelier").mapster(
         {
@@ -336,6 +357,7 @@ var spanBaudelaire = document.getElementById('spanBaudelaire');
 
 //baudelaire display modal
 baudelaire.onclick = function(){
+    stopSound();
     baudelaireModal.style.display = "block";
     baudelaireAudio1.play();
     setTimeout(function(){
@@ -350,6 +372,7 @@ baudelaire.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseBaudelaire1.onclick = function(){
+    stopSound();
     baudelaireAudio3.play();
     $("#atelier").mapster(
         {
@@ -367,6 +390,7 @@ reponseBaudelaire1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseBaudelaire2.onclick = function() {
+    stopSound();
     baudelaireAudio4.play();
     $("#atelier").mapster(
         {
@@ -412,6 +436,7 @@ var spanIrlandaise = document.getElementById('spanIrlandaise');
 
 //Irlandaise display modal
 irlandaise.onclick = function(){
+    stopSound();
     irlandaiseModal.style.display = "block";
     irlandaiseAudio1.play();
     setTimeout(function(){
@@ -426,6 +451,7 @@ irlandaise.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseIrlandaise1.onclick = function(){
+    stopSound();
     irlandaiseAudio3.play();
     $("#atelier").mapster(
         {
@@ -443,6 +469,7 @@ reponseIrlandaise1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseIrlandaise2.onclick = function() {
+    stopSound();
     irlandaiseAudio4.play();
     $("#atelier").mapster(
         {
@@ -488,6 +515,7 @@ var spanJuliette = document.getElementById('spanJuliette');
 
 //Juliette display modal
 juliette.onclick = function(){
+    stopSound();
     julietteModal.style.display = "block";
     julietteAudio1.play();
     setTimeout(function(){
@@ -502,6 +530,7 @@ juliette.onclick = function(){
 
 //Réponse 1 est cliquer
 reponseJuliette1.onclick = function(){
+    stopSound();
     julietteAudio3.play();
     $("#atelier").mapster(
         {
@@ -519,6 +548,7 @@ reponseJuliette1.onclick = function(){
 
 //Réponse 2 est cliqué
 reponseJuliette2.onclick = function() {
+    stopSound();
     julietteAudio4.play();
     $("#atelier").mapster(
         {
@@ -548,47 +578,7 @@ spanJuliette.onclick = function () {
     julietteAudio4.pause();
     julietteAudio4.currentTime = 0;
 };
-/* window.onclick = function(event){
 
-    if(event.target == enfantModal){
-        enfantModal.style.display = "none";
-    }
-    else if(event.target == enfantModalChoix1){
-        enfantModalChoix1.style.display = "none";
-    }
-    else if(event.target == enfantModalChoix2){
-        enfantModalChoix2.style.display = "none";
-    }
-    else if(event.target == napoleonModal){
-        napoleonModal.style.display = "none";
-    }
-    else if(event.target == napoleonModal2){
-        napoleonModal2.style.display = "none";
-    }
-    else if(event.target == prudhonModal){
-        prudhonModal.style.display = "none";
-    }
-    else if(event.target == prudhonModal2){
-        prudhonModal2.style.display = "none";
-    }
-    else if(event.target == baudelaireModal){
-        baudelaireModal.style.display = "none";
-    }
-    else if(event.target == baudelaireModal2){
-        baudelaireModal2.style.display = "none";
-    }
-    else if(event.target == irlandaiseModal){
-        irlandaiseModal.style.display = "none";
-    }
-    else if(event.target == irlandaiseModal2){
-        irlandaiseModal2.style.display = "none";
-    }
-    else if(event.target == julietteModal){
-        julietteModal.style.display = "none";
-    }
-    else if(event.target == julietteModal2){
-        julietteModal2.style.display = "none";
-    } */
 //////////////////////////////////////// Fin Juliette ////////////////////////////////////////////////
 
 
