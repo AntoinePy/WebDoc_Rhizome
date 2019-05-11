@@ -104,6 +104,18 @@ setTimeout( function() {
     document.getElementsByTagName( "input" )[2].click();
     document.getElementsByTagName( "input" )[3].click();
 }, 1000 );
+//////////////////////////////////////// Welcome ////////////////////////////////////////////////
+var welcomeModal = document.getElementById('welcomeModal');
+var spanWelcome = document.getElementById('spanWelcome');
+var buttonWelcome = document.getElementById('buttonWelcome');
+welcomeModal.style.display = "none";
+function welcomePop(){
+    welcomeModal.style.display = "block";
+}
+spanWelcome.onclick = function (){
+    welcomeModal.style.display = "none";
+}
+//////////////////////////////////////// Fin Welcome ////////////////////////////////////////////////
 
 //////////////////////////////////////// Enfant ////////////////////////////////////////////////
 
@@ -581,15 +593,27 @@ spanJuliette.onclick = function () {
 
 //////////////////////////////////////// Fin Juliette ////////////////////////////////////////////////
 
-
-
 //IMG
 var atelier = document.getElementById('atelier');
 
+/*  window.onclick = function(event){
 
+    if(event.target == enfantModal){
+        stopSound();
+        enfantModal.style.display = "none";
+    }
+    else if(event.target == enfantModalChoix1){
+        stopSound();
+        enfantModalChoix1.style.display = "none";
+    }
+    else if(event.target == enfantModalChoix2){
+        stopSound();
+        enfantModalChoix2.style.display = "none";
+    }
+    
+ } 
+ */
 /*
-
-
 var prudhonModal = document.getElementById('prudhonModal');
 var prudhonModal2 = document.getElementById('prudhonModal2');
 

@@ -23,6 +23,17 @@ button {
   border-color: #a57746;
 }
 
+#welcomeModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-left: 590px;
+  left: 0;
+  top: 0;
+  color: #312D2E;
+  text-align: center;
+}
+
 #enfantModal {
   display: none;
   position: fixed;
