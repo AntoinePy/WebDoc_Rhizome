@@ -3,6 +3,7 @@ var dialog2;
 var modalClass = document.getElementsByClassName('modal');
 var titre = document.getElementById("titre");
 var eastereggs = document.getElementById("eastereggs");
+var menu = document.getElementById("menu");
 //AUDIO
 
 var audio = document.getElementById("guitare");
@@ -32,7 +33,14 @@ var proudhonAudio2 = document.getElementById("conversationProudhon2");
 var proudhonAudio3 = document.getElementById("conversationProudhon3");
 var proudhonAudio4 = document.getElementById("conversationProudhon4");
 //FIN AUDIO
-
+menu.onclick = function(){
+    $("#atelier").mapster(
+        {
+            fillColor: 'ff0000',
+            fillOpacity: 0.3
+        });
+        document.location.reload(true);
+}
 eastereggs.onclick = function(){
     $("#atelier").mapster(
         {
@@ -119,7 +127,7 @@ reponseEnfant1.onclick = function(){
     enfantModalChoix2.style.display = "none";
     enfantModal.style.display = "none";
     setTimeout( function(){
-        document.getElementsByTagName("img").item(0).src="img/Emile_F1.jpg";
+        document.getElementsByTagName("img").item(0).src="img/Emile_F2.jpg";
     } , 1000);
 
 };
@@ -136,7 +144,7 @@ reponseEnfant2.onclick = function() {
     enfantModalChoix2.style.display = "none";
     enfantModal.style.display = "none";
     setTimeout( function(){
-        document.getElementsByTagName("img").item(0).src = "img/Emile_F2.jpg";
+        document.getElementsByTagName("img").item(0).src = "img/Emile_F1.jpg";
     } , 1000);
 
 };
@@ -146,6 +154,14 @@ spanEnfant.onclick = function () {
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
     enfantModal.style.display = "none";
+    enfantAudio1.pause();
+    enfantAudio1.currentTime = 0;
+    enfantAudio2.pause();
+    enfantAudio2.currentTime = 0;
+    enfantAudio3.pause();
+    enfantAudio3.currentTime = 0;
+    enfantAudio4.pause();
+    enfantAudio4.currentTime = 0;
 };
 
 
@@ -216,6 +232,14 @@ spanNapoleon.onclick = function () {
     napoleonModal.style.display = "none";
     napoleonModalChoix1.style.display = "none";
     napoleonModalChoix2.style.display = "none";
+    napoleonAudio1.pause();
+    napoleonAudio1.currentTime = 0;
+    napoleonAudio2.pause();
+    napoleonAudio2.currentTime = 0;
+    napoleonAudio3.pause();
+    napoleonAudio3.currentTime = 0;
+    napoleonAudio4.pause();
+    napoleonAudio4.currentTime = 0;
 };
 
 //////////////////////////////////////// Fin Napoléon ////////////////////////////////////////////////
@@ -287,6 +311,14 @@ spanProudhon.onclick = function () {
     proudhonModal.style.display = "none";
     proudhonModalChoix1.style.display = "none";
     proudhonModalChoix2.style.display = "none";
+    proudhonAudio1.pause();
+    proudhonAudio1.currentTime = 0;
+    proudhonAudio2.pause();
+    proudhonAudio2.currentTime = 0;
+    proudhonAudio3.pause();
+    proudhonAudio3.currentTime = 0;
+    proudhonAudio4.pause();
+    proudhonAudio4.currentTime = 0;
 };
 
 //////////////////////////////////////// Fin Proudhon ////////////////////////////////////////////////
@@ -355,6 +387,14 @@ spanBaudelaire.onclick = function () {
     baudelaireModal.style.display = "none";
     baudelaireModalChoix1.style.display = "none";
     baudelaireModalChoix2.style.display = "none";
+    baudelaireAudio1.pause();
+    baudelaireAudio1.currentTime = 0;
+    baudelaireAudio2.pause();
+    baudelaireAudio2.currentTime = 0;
+    baudelaireAudio3.pause();
+    baudelaireAudio3.currentTime = 0;
+    baudelaireAudio4.pause();
+    baudelaireAudio4.currentTime = 0;
 };
 
 //////////////////////////////////////// Fin Baudelaire ////////////////////////////////////////////////
@@ -423,6 +463,14 @@ spanIrlandaise.onclick = function () {
     irlandaiseModal.style.display = "none";
     irlandaiseModalChoix1.style.display = "none";
     irlandaiseModalChoix2.style.display = "none";
+    irlandaiseAudio1.pause();
+    irlandaiseAudio1.currentTime = 0;
+    irlandaiseAudio2.pause();
+    irlandaiseAudio2.currentTime = 0;
+    irlandaiseAudio3.pause();
+    irlandaiseAudio3.currentTime = 0;
+    irlandaiseAudio4.pause();
+    irlandaiseAudio4.currentTime = 0;
 };
 
 //////////////////////////////////////// Fin Irlandaise ////////////////////////////////////////////////
@@ -491,6 +539,14 @@ spanJuliette.onclick = function () {
     julietteModal.style.display = "none";
     julietteModalChoix1.style.display = "none";
     julietteModalChoix2.style.display = "none";
+    julietteAudio1.pause();
+    julietteAudio1.currentTime = 0;
+    julietteAudio2.pause();
+    julietteAudio2.currentTime = 0;
+    julietteAudio3.pause();
+    julietteAudio3.currentTime = 0;
+    julietteAudio4.pause();
+    julietteAudio4.currentTime = 0;
 };
 
 //////////////////////////////////////// Fin Juliette ////////////////////////////////////////////////
