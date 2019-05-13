@@ -47,16 +47,24 @@ var proudhonAudio4 = document.getElementById("conversationProudhon4");
 menu.onclick = function(){
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     document.location.reload(true);
 }
 eastereggs.onclick = function(){
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     window.open('http://lareponseestdansletableau.fr','_blank');
 };
@@ -67,8 +75,12 @@ $("#chitarra").click(function(){
     stopSound();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     audio.play();
     return false;
@@ -77,8 +89,12 @@ $("#cane").click(function(){
     stopSound();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     chienAudio.play();
     return false;
@@ -87,8 +103,12 @@ $("#gato").click(function(){
     stopSound();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     chatAudio.play();
     return false;
@@ -96,8 +116,11 @@ $("#gato").click(function(){
 
 $("#atelier").mapster(
 {
-    fillColor: 'ff0000',
-    fillOpacity: 0.3,
+    //fillColor: 'ff0000',
+    fillOpacity: 0.3, 
+    stroke: true,
+    strokeColor: 'fef1b3',
+    strokeWidth: 2,
     singleSelect: true
 });
 //////////////////////////////////////// Welcome ////////////////////////////////////////////////
@@ -144,8 +167,12 @@ reponseEnfant1.onclick = function(){
     enfantAudio2.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
@@ -162,8 +189,12 @@ reponseEnfant2.onclick = function() {
     enfantAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
@@ -179,8 +210,12 @@ spanEnfant.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
@@ -230,8 +265,12 @@ reponseNapoleon1.onclick = function(){
     napoleonAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     napoleonModal.style.display = "none";
     napoleonModalChoix1.style.display = "none";
@@ -248,8 +287,12 @@ reponseNapoleon2.onclick = function() {
     napoleonAudio4.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     napoleonModal.style.display = "none";
     napoleonModalChoix1.style.display = "none";
@@ -265,8 +308,12 @@ spanNapoleon.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     napoleonModal.style.display = "none";
     napoleonModalChoix1.style.display = "none";
@@ -317,8 +364,12 @@ reponseProudhon1.onclick = function(){
     proudhonAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     proudhonModal.style.display = "none";
     proudhonModalChoix1.style.display = "none";
@@ -335,8 +386,12 @@ reponseProudhon2.onclick = function() {
     proudhonAudio4.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     proudhonModal.style.display = "none";
     proudhonModalChoix1.style.display = "none";
@@ -352,8 +407,12 @@ spanProudhon.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     proudhonModal.style.display = "none";
     proudhonModalChoix1.style.display = "none";
@@ -400,8 +459,12 @@ reponseBaudelaire1.onclick = function(){
     baudelaireAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     baudelaireModal.style.display = "none";
     baudelaireModalChoix1.style.display = "none";
@@ -418,8 +481,12 @@ reponseBaudelaire2.onclick = function() {
     baudelaireAudio4.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     baudelaireModal.style.display = "none";
     baudelaireModalChoix1.style.display = "none";
@@ -435,8 +502,12 @@ spanBaudelaire.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     baudelaireModal.style.display = "none";
     baudelaireModalChoix1.style.display = "none";
@@ -484,8 +555,12 @@ reponseIrlandaise1.onclick = function(){
     irlandaiseAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     irlandaiseModal.style.display = "none";
     irlandaiseModalChoix1.style.display = "none";
@@ -502,8 +577,12 @@ reponseIrlandaise2.onclick = function() {
     irlandaiseAudio4.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     irlandaiseModal.style.display = "none";
     irlandaiseModalChoix1.style.display = "none";
@@ -519,8 +598,12 @@ spanIrlandaise.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     irlandaiseModal.style.display = "none";
     irlandaiseModalChoix1.style.display = "none";
@@ -568,8 +651,12 @@ reponseJuliette1.onclick = function(){
     julietteAudio3.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     julietteModal.style.display = "none";
     julietteModalChoix1.style.display = "none";
@@ -586,8 +673,12 @@ reponseJuliette2.onclick = function() {
     julietteAudio4.play();
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     julietteModal.style.display = "none";
     julietteModalChoix1.style.display = "none";
@@ -603,8 +694,12 @@ spanJuliette.onclick = function () {
     clearTimeout(timer);
     $("#atelier").mapster(
         {
-            fillColor: 'ff0000',
-            fillOpacity: 0.3
+            //fillColor: 'ff0000',
+            fillOpacity: 0.3, 
+            stroke: true,
+            strokeColor: 'fef1b3',
+            strokeWidth: 2,
+            singleSelect: true
         });
     julietteModal.style.display = "none";
     julietteModalChoix1.style.display = "none";
