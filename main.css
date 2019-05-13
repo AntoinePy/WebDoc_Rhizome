@@ -256,6 +256,7 @@ button {
 
 .reponse:hover {
   color: #5F5E3D;
+  cursor: pointer;
 }
 
 .text-content {
