@@ -176,6 +176,7 @@ reponseEnfant2.onclick = function() {
 
 //Tout fermer
 spanEnfant.onclick = function () {
+    clearTimeout(timer);
     enfantModalChoix1.style.display = "none";
     enfantModalChoix2.style.display = "none";
     enfantModal.style.display = "none";
@@ -256,6 +257,7 @@ reponseNapoleon2.onclick = function() {
 
 //Tout fermer
 spanNapoleon.onclick = function () {
+    clearTimeout(timer);
     napoleonModal.style.display = "none";
     napoleonModalChoix1.style.display = "none";
     napoleonModalChoix2.style.display = "none";
@@ -337,6 +339,7 @@ reponseProudhon2.onclick = function() {
 
 //Tout fermer
 spanProudhon.onclick = function () {
+    clearTimeout(timer);
     proudhonModal.style.display = "none";
     proudhonModalChoix1.style.display = "none";
     proudhonModalChoix2.style.display = "none";
@@ -414,6 +417,7 @@ reponseBaudelaire2.onclick = function() {
 
 //Tout fermer
 spanBaudelaire.onclick = function () {
+    clearTimeout(timer);
     baudelaireModal.style.display = "none";
     baudelaireModalChoix1.style.display = "none";
     baudelaireModalChoix2.style.display = "none";
@@ -492,6 +496,7 @@ reponseIrlandaise2.onclick = function() {
 
 //Tout fermer
 spanIrlandaise.onclick = function () {
+    clearTimeout(timer);
     irlandaiseModal.style.display = "none";
     irlandaiseModalChoix1.style.display = "none";
     irlandaiseModalChoix2.style.display = "none";
@@ -570,6 +575,7 @@ reponseJuliette2.onclick = function() {
 
 //Tout fermer
 spanJuliette.onclick = function () {
+    clearTimeout(timer);
     julietteModal.style.display = "none";
     julietteModalChoix1.style.display = "none";
     julietteModalChoix2.style.display = "none";
